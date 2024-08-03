@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="./assets/css/custom.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+
+<body>
+    <header>
+        <div class="top_section bg_black">
+            <div class="row_container font_white flex">
+                <div class="google_star flex">
+                    <p>UITSTEKEND</p>
+                    <div class="image_star_container flex">
+                        <img src="./assets/images/star.png" alt="star icon">
+                        <img src="./assets/images/star.png" alt="star icon">
+                        <img src="./assets/images/star.png" alt="star icon">
+                        <img src="./assets/images/star.png" alt="star icon">
+                        <img src="./assets/images/star.png" alt="star icon">
+                    </div>
+                    <p>512 recensies op</p>
+                    <img src="./assets/images/google-lg.png" alt="google icon" height="20px">
+                </div>
+                <div class="item-check flex">
+                    <span class="rounded_green">
+                        <img src="./assets/images/check.svg" alt="check icon">
+                    </span>
+                    <p>Binnen 1 à 2 dagen geleverd</p>
+                </div>
+                <div class="item-check flex">
+                    <span class="rounded_green">
+                        <img src="./assets/images/check.svg" alt="check icon">
+                    </span>
+                    <p>Expert op tuiyngebied</p>
+                </div>
+                <div class="item-check flex">
+                    <span class="rounded_green">
+                        <img src="./assets/images/check.svg" alt="check icon">
+                    </span>
+                    <p>100% Tevredenheidgarantie</p>
+                </div>
+            </div>
+        </div>
+        <div class="middle_section">
+            <div class="row_container flex row">
+                <img src="./assets/images/black-logo.jpg" alt="site logo" class="site_logo" width="250px">
+                <form action="" class="search_form">
+                    <div class="with_border">
+                        <img src="./assets/images/search.svg" alt="search" width="20px">
+                        <input type="text" placeholder="Waar bent u naar opzoek?">
+                    </div>
+                    <button type="submit" class="bg_green font_white">Zoeken</button>
+                </form>
+                <div class="profile_container flex row">
+                    <div class="profile_item flex row">
+                        <div class="icon_container">
+                            <img src="./assets/images/headset.png" alt="customer services">
+                        </div>
+                        <div class="flew row">
+                            <p><strong>Klantenservice</strong></p>
+                            <p><a href="tel:0800-1234">0800-1234</a></p>
+                        </div>
+                    </div>
+                    <div class="profile_item flex row with_chart">
+                        <div class="icon_container">
+                            <img src="./assets/images/lock.png" alt="customer services">
+                            <strong><span class="rounded_green font_white">2</span></strong>
+                        </div>
+                        <div class="flew row">
+                            <p><strong>Winkelwagen</strong></p>
+                            <p>€12,64</p>
+                        </div>
+                    </div>
+                    <div class="profile_item flex row">
+                        <div class="icon_container">
+                            <img src="./assets/images/person.png" alt="customer services">
+                        </div>
+                        <div class="flew row">
+                            <p><strong>Mijn Account</strong></p>
+                            <p>Inloggen</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_section bg_gray">
+            <div class="row_container flex categories_menu_container">
+                <ul>
+                    <li><a class="all_cat category_btn"> <img src="./assets/images/menu-white.png" alt="menu icon"
+                                srcset=""> Alle
+                            categorieen</a></li>
+                    <li><a href="#">Blokhutten</a></li>
+                    <li><a href="#">Sauna’s</a></li>
+                    <li><a href="#">Tuinkasten</a></li>
+                    <li><a href="#">Jacuzzi’s</a></li>
+                    <li><a href="#">Parasols</a></li>
+                    <li><a href="#">Categorie6</a></li>
+                    <li><a href="#">Categorie7</a></li>
+                    <li><a href="#">Categorie8</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="slider_categories">
+            <div id="wrap_slider">
+                <div class="popup_header flex space_between">
+                    <h2>Kies een categorie</h2>
+                    <button class="close-call"><img src="./assets/images/close.svg" alt="close button"></button>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">Sauna’s</a>
+                        <div class="arrow_btn">
+                            <button><img src="./assets/images/arrow-gray.svg" alt="next menu"></button>
+                        </div>
+
+                        <!-- the sub menu -->
+                        <div class="sub-menu">
+                            <div class="popup_header flex space_between">
+                                <h2>Sauna’s</h2>
+                                <button class="close-call"><img src="./assets/images/close.svg" alt="close button"
+                                        height="20px"></button>
+                            </div>
+                            <div class="back_to_main_category">
+                                <a class="close_sub_menu">
+                                    <img src="./assets/images/prev_green.svg" alt="back icon">
+                                    <p>Back to main category</p>
+                                </a>
+                            </div>
+                            <hr class="divider_with_space">
+                            <ul class="sub_menu_item_list">
+                                <li>
+                                    <a href="#">
+                                        <p>aaaa</p>
+                                        <img src="./assets/images/arrow-gray.svg" alt="next menu">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p>aaaa</p>
+                                        <img src="./assets/images/arrow-gray.svg" alt="next menu">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p>aaaa</p>
+                                        <img src="./assets/images/arrow-gray.svg" alt="next menu">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Tuinkasten</a>
+                        <div class="arrow_btn"><button><img src="./assets/images/arrow-gray.svg"
+                                    alt="next menu"></button></div>
+                    </li>
+                    <li>
+                        <a href="#">Tuinkasten</a>
+                        <div class="arrow_btn"><button><img src="./assets/images/arrow-gray.svg"
+                                    alt="next menu"></button></div>
+                    </li>
+                    <li>
+                        <a href="#">Tuinkasten</a>
+                        <div class="arrow_btn"><button><img src="./assets/images/arrow-gray.svg"
+                                    alt="next menu"></button></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="backdrop"></div>
+        </section>
+    </header>
+    <main>
+        <div class="product_detail_container">
+            <div class="row_container">
+                <div class="breadcrumb">
+                    <a href="#">Terug </a>
+                    <p> | </p>
+                    <a href="#">Home</a>
+                    <p> / </p>
+                    <a href="#">Blokhutten</a>
+                    <p> / </p>
+                    <a href="#">Blokhut</a>
+                </div>
+
+                <div class="product_detail_content">
+                    <div class="title_container">
+                        <h1>Blokhut Anton</h1>
+                        <div class="small_description flex">
+                            <p>Art.nummer: 12345678</p>
+                            <p> | </p>
+                            <p>
+                                -33%
+                                Productomschrijving
+                                Kant- en klaar bouwpakket </p>
+                            <p> | </p>
+                            <p>
+                                Bepaal zelf locatie van deur/ramen</p>
+                        </div>
+                        <div class="full_description">
+                            <div class="left">
+                                <!-- <div id="product__slider">
+                                    <div class="product__slider-main">
+                                        <div class="slide"><img src="http://dummyimage.com/300" alt=""
+                                                class="img-responsive"></div>
+                                        <div class="slide"><img src="http://dummyimage.com/300" alt=""
+                                                class="img-responsive"></div>
+                                        <div class="slide"><img src="http://dummyimage.com/300" alt=""
+                                                class="img-responsive"></div>
+                                        <div class="slide"><img src="http://dummyimage.com/300" alt=""
+                                                class="img-responsive"></div>
+                                    </div>
+                                    <div class="product__slider-thmb">
+                                        <div class="slide"><img src="http://dummyimage.com/300" alt=""
+                                                class="img-responsive"></div>
+                                        <div class="slide"><img src="http://dummyimage.com/300" alt=""
+                                                class="img-responsive"></div>
+                                        <div class="slide"><img src="http://dummyimage.com/300" alt=""
+                                                class="img-responsive"></div>
+                                        <div class="slide"><img src="http://dummyimage.com/300" alt=""
+                                                class="img-responsive"></div>
+                                    </div>
+                                </div> -->
+
+                                <div class="slider-container">
+                                    <div class="slider">
+                                        <div class="slide"><img src="http://dummyimage.com/300" alt=""
+                                                class="img-responsive"></div>
+                                        <div class="slide"><img src="http://dummyimage.com/300" alt=""
+                                                class="img-responsive"></div>
+                                        <!-- More slides as needed -->
+                                    </div>
+                                    <div class="thumbnails">
+                                        <div class="thumb" data-index="0"><img src="http://dummyimage.com/300" alt=""
+                                                class="img-responsive"></div>
+                                        <div class="thumb" data-index="1"><img src="http://dummyimage.com/300" alt=""
+                                                class="img-responsive"></div>
+                                    </div>
+                                    <!-- More thumbnails as needed -->
+                                </div>
+                            </div>
+
+                            <!-- Pop-up Gallery -->
+                            <div class="popup-gallery">
+                                <div class="popup-content">
+                                    <button class="close-btn">&times;</button>
+                                    <button class="prev-btn">&#10094;</button>
+                                    <img src="" alt="Popup Image">
+                                    <button class="next-btn">&#10095;</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="right"></div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="contact_section">
+            <div class="row_container font_white flex space_between">
+                <img src="./assets/images/people-pointing.png" alt="people pointing" height="300px">
+                <div class="contact_cards">
+                    <div class="contact_item">
+                        <img src="./assets/images/call-white.png" alt="call icon">
+                        <h4>Bel ons op 0800-1234</h4>
+                        <p>Bereikbaar van 08:00 - 17:00</p>
+                    </div>
+                    <div class="contact_item">
+                        <img src="./assets/images/chat.png" alt="chat icon">
+                        <h4>Chat met ons!</h4>
+                        <p>Bereikbaar van 08:00 - 17:00</p>
+                    </div>
+                    <div class="contact_item">
+                        <img src="./assets/images/whatsaap.png" alt="whatsaap icon">
+                        <h4>WhatsApp</h4>
+                        <p> Op werkdagen gelijk antwoord! </p>
+                    </div>
+                    <div class="contact_item">
+                        <img src="./assets/images/email.png" alt="email icon">
+                        <h4>Stuur ons een email!</h4>
+                        <p> Op werkdagen gelijk antwoord!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu_footer_section bg_dark_green">
+            <div class="row_container">
+                <div class="menu_item_cards">
+                    <div class="menu_item_footer">
+                        <img src="./assets/images/white-logo.jpg" alt="logo white" class="logo">
+                        <div class="social_media">
+                            <a href="#"><img src="./assets/images/ig.svg" alt="ig icon"></a>
+                            <a href="#"><img src="./assets/images/fb.svg" alt="fb icon"></a>
+                            <a href="#"><img src="./assets/images/linkedin.svg" alt="linkedin icon"></a>
+                        </div>
+                        <div class="location_items">
+                            <div class="location_item">
+                                <img src="./assets/images/location.svg" alt="location icon">
+                                <a href="#">Straatnaam 123 1234 AB, Amsterdam</a>
+                            </div>
+                            <div class="location_item">
+                                <img src="./assets/images/call-white.png" alt="call us">
+                                <a href="tel:+123456789">+123456789</a>
+                            </div>
+                            <div class="location_item">
+                                <img src="./assets/images/email.png" alt="mail us">
+                                <a href="mailto:Info@tuiyn.nl">Info@tuiyn.nl</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu_item_footer">
+                        <h3>Menu.</h3>
+                        <div class="divider"></div>
+                        <ul>
+                            <li><a href="#">Blokhutten</a></li>
+                            <li><a href="#">Sauna’s</a></li>
+                            <li><a href="#">Schuttingen</a></li>
+                            <li><a href="#">Veranda’s</a></li>
+                            <li><a href="#">Tuinkasten</a></li>
+                            <li><a href="#">Sale</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu_item_footer">
+                        <h3>KLANTENSERVICE.</h3>
+                        <div class="divider"></div>
+                        <ul>
+                            <li><a href="#">Klantenservice</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Garantie</a></li>
+                            <li><a href="#">Bezorgen</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu_item_footer">
+                        <h3>EXTRA MENU.</h3>
+                        <div class="divider"></div>
+                        <ul>
+                            <li><a href="#">Extra 1</a></li>
+                            <li><a href="#">Extra 1</a></li>
+                            <li><a href="#">Extra 1</a></li>
+                            <li><a href="#">Extra 1</a></li>
+                            <li><a href="#">Extra 1</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu_item_footer">
+                        <h3>NIEUWSBRIEF.</h3>
+                        <div class="divider"></div>
+                        <p>Schrijf je in voor onze nieuwsbrief en profiteer gelijk van mooie kortingen en blijf op de
+                            hoogte van alle nieuwtjes rondom jouw favoriete tuiynspullen specialist!</p>
+                        <form action="#">
+                            <input type="email" placeholder="Uw e-mail adres...">
+                            <button type="submit">Verstuur!</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright_section bg_dark_green font_white">
+            <div class="row_container ">
+                <div class="copyright_content flex">
+                    <p>All rights reserved Tuiyn.nl 2024</p>
+                    <ul>
+                        <li><a href="#">Algemene voorwaarden</a></li>
+                        <li><a href="#"> Privacy Policy</a></li>
+                    </ul>
+                    <div class="payment_method">
+                        <img src="./assets/images/visa.png" alt="visa">
+                        <img src="./assets/images/visa.png" alt="visa">
+                        <img src="./assets/images/visa.png" alt="visa">
+                        <img src="./assets/images/visa.png" alt="visa">
+                    </div>
+                    <div class="social_media bg_white">
+                        <a href="#"><img src="./assets/images/ig.svg" alt="ig icon"></a>
+                        <a href="#"><img src="./assets/images/fb.svg" alt="fb icon"></a>
+                        <a href="#"><img src="./assets/images/linkedin.svg" alt="linkedin icon"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="pop_up_cart" style="display: none;">
+            <div class="backdrop"></div>
+            <div id="wrap_popup">
+                <div class="content_popup">
+                    <div class="popup_header flex space_between">
+                        <h2>Winkelwagen</h2>
+                        <button class="close-call"><img src="./assets/images/close.svg" alt="close button"></button>
+                    </div>
+                    <hr>
+                    <div class="items_cart_popup">
+                        <div class="item_cart">
+                            <div class="item_image">
+                                <img src="./assets/images/small.jpeg" alt="item_image" width="100px">
+                            </div>
+                            <div class="item_product">
+                                <a href="#"> Keter Cortina 97 kunststof tuinhuis Antraciet </a>
+                                <select name="product_quantity" class="select2">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </div>
+                            <div class="item_price">
+                                <p>€ 2.149,-</p>
+                                <a class="remove_this_item" href="#"><img src="./assets/images/close.svg"
+                                        alt="close button"> Verwijderen</a>
+                            </div>
+                        </div>
+                        <div class="item_cart">
+                            <div class="item_image">
+                                <img src="./assets/images/small.jpeg" alt="item_image" width="100px">
+                            </div>
+                            <div class="item_product">
+                                <a href="#"> Keter Cortina 97 kunststof tuinhuis Antraciet </a>
+                                <select name="product_quantity" class="select2">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </div>
+                            <div class="item_price">
+                                <p>€ 2.149,-</p>
+                                <a class="remove_this_item" href="#"><img src="./assets/images/close.svg"
+                                        alt="close button"> Verwijderen</a>
+                            </div>
+                        </div>
+                        <div class="item_cart">
+                            <div class="item_image">
+                                <img src="./assets/images/small.jpeg" alt="item_image" width="100px">
+                            </div>
+                            <div class="item_product">
+                                <a href="#"> Keter Cortina 97 kunststof tuinhuis Antraciet </a>
+                                <select name="product_quantity" class="select2">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </div>
+                            <div class="item_price">
+                                <p>€ 2.149,-</p>
+                                <a class="remove_this_item" href="#"><img src="./assets/images/close.svg"
+                                        alt="close button"> Verwijderen</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup_footer">
+                        <hr>
+                        <div class="shipment flex space_between">
+                            <p>Verzendkosten</p>
+                            <p>GRATIS</p>
+                        </div>
+                        <div class="total flex space_between">
+                            <p>Totaal</p>
+                            <p>€ 2.149,-</p>
+                        </div>
+                        <hr>
+                        <a href="#" class="bg_green font_white afrekenen">Afrekenen</a>
+                        <a href="#" class="email_pop">Winkelwagen e-mailen</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>

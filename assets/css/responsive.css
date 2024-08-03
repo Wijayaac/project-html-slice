@@ -1,0 +1,22 @@
+/* global class for button */
+@media only screen and (max-width: 1028px) {}
+
+@media screen and (min-width: 1028px) {
+	.menu_btn {
+		display: none;
+	}
+
+}
+
+@media screen and (max-width: 1028px) {
+
+	.top_section,
+	.bottom_section {
+		display: none;
+	}
+
+	.menu_btn {
+		display: block;
+	}
+
+}
