@@ -1,4 +1,22 @@
+/* global style for box sizing */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
 /* global class for button */
+button {
+	outline: none;
+	border: none;
+	background: none;
+}
+
+/* global class for flex */
+.flex-col {
+	flex-direction: column;
+}
+
 @media only screen and (max-width: 1028px) {}
 
 @media screen and (min-width: 1028px) {
@@ -9,14 +27,183 @@
 }
 
 @media screen and (max-width: 1028px) {
+	:root {
+		/* times by 0.73 */
+		--xll: 48px;
+		--m: 23px;
+		--l: 32px;
+		--s: 13px;
+	}
 
+	/* header section */
 	.top_section,
 	.bottom_section {
 		display: none;
 	}
 
-	.menu_btn {
-		display: block;
+	.middle_section {
+		padding-top: 8px;
+		padding-bottom: 8px;
 	}
 
+	.middle_section .row_container {
+		gap: 20px;
+		flex-wrap: wrap;
+	}
+
+	.menu_btn {
+		display: block;
+		order: 1;
+		flex: 0 0 15%;
+		max-width: 15%;
+	}
+
+	.all_cat {
+		padding: 6px 12px;
+	}
+
+	.site_logo {
+		width: 120px;
+		order: 2;
+		flex: 0 0 30%;
+		max-width: 33%;
+	}
+
+	.profile_container {
+		order: 3;
+		flex: 0 0 33%;
+		max-width: 33%;
+	}
+
+	.search_form {
+		order: 4;
+		flex: 0 0 100%;
+	}
+
+	.profile_item .flex-col {
+		display: none;
+	}
+
+	.profile_item .icon_container img {
+		width: 20px;
+	}
+
+	/* Hero section */
+	.content_hero {
+		width: 100%;
+		padding: 60px 0;
+	}
+
+	.content_hero h1 {
+		line-height: 1;
+		word-break: break-all;
+	}
+
+	.content_hero p {
+		margin: 24px 0;
+	}
+
+	/* supersale section */
+	.supersale {
+		padding: 20px;
+	}
+
+	.supersale .row_container {
+		grid-template-columns: 1fr;
+		gap: 16px;
+	}
+
+	/* categories card */
+	.heading_container {
+		flex-direction: column;
+		padding: 40px 0;
+		align-items: flex-start;
+		gap: 16px;
+	}
+
+	.categories_container {
+		margin-bottom: 32px;
+	}
+
+	.category_card {
+		flex: 0 0 46%;
+		max-width: 46%;
+	}
+
+	.category_card,
+	.category_card:nth-child(2),
+	.category_card:first-child {
+		padding: 20px 10px;
+		min-height: 250px;
+	}
+
+	.category_card:first-child a,
+	.category_card:nth-child(2) a,
+	.category_card a {
+		padding: 10px 20px;
+		width: 100%;
+	}
+
+	/* deals section */
+	.heading_main_container .heading_container {
+		padding-bottom: 24px;
+	}
+
+	.deals_content {
+		flex-direction: column-reverse;
+		gap: 24px;
+	}
+
+	.deals_content .left_side,
+	.deals_content .right_side {
+		width: 100%;
+		flex-direction: column;
+		gap: 24px;
+	}
+
+	.main_sale {
+		padding: 20px;
+	}
+
+	.item_deal {
+		width: 100%;
+		gap: 16px;
+		justify-content: flex-start;
+	}
+
+	.item_deal a {
+		text-align: center;
+	}
+
+	.sale_image {
+		width: 100%;
+		position: relative;
+		padding-top: 56.25%;
+		margin-bottom: 16px;
+	}
+
+	.sale_image img {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	/* rates section */
+	.google_star,
+	.rates_heading {
+		flex-direction: column;
+	}
+
+	.rates_heading {
+		gap: 16px;
+	}
+
+	.rates_heading h2 {
+		text-align: center;
+	}
 }
