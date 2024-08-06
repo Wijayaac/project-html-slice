@@ -6,7 +6,49 @@ jQuery(document).ready(function ($) {
     categorySlider($);
     slickWithThumba($);
     slickWithThumb($);
+    removeActiveFilter($);
+    slideUpandDownFilter($);
+    slickItems($);
+    likeTheProduct($);
 });
+
+function likeTheProduct($) {
+    if ($(".like").length > 0) {
+        $('.like').click(function (e) {
+            e.preventDefault();
+            if ($(this).hasClass("no")) {
+                $(this).removeClass("no");
+                $(this).addClass("yes");
+            } else {
+                $(this).removeClass("yes");
+                $(this).addClass("no");
+            }
+
+            // add the ajax ....
+        });
+    }
+}
+
+function slideUpandDownFilter($) {
+    $('.slide_the_list').click(function () {
+        $(this).next('.check_list').slideToggle(); // Slide up or down the next sibling with class .check_list
+        $(this).toggleClass("open");
+    });
+}
+
+function removeActiveFilter($) {
+    // if the X button clicked, it'll remove the current active filter
+    if ($(".active_filters").length > 0) {
+        $('.filter_content').on('click', '.remove', function () {
+            $(this).parent('p').remove();
+        });
+
+        // remove all active filter
+        $('.remove_all_active_filter').on('click', function () {
+            $('.filter_content').find("p").remove();
+        });
+    }
+}
 
 function slickWithThumb($) {
     $(document).ready(function () {
@@ -236,16 +278,21 @@ function slickReview($) {
             autoplaySpeed: 2000,
             prevArrow: '<button class="prev_btn slick-arrow"></button>',
             nextArrow: '<button class="next_btn slick-arrow"></button>',
-            // infinite: false,
-            // slidesToScroll: 1,
-            // slidesToShow: 1,
-            // variableWidth: true,
-            // centerMode: true,
-            // prevArrow: false,
-            // nextArrow: false,
-            // slidesToShow: 1,
-            // initialSlide: 0,
         });
+    }
+}
 
+function slickItems($) {
+    if ($(".items_slider").length > 0) {
+        $('.items_slider').slick({
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            variableWidth: false,
+            autoplay: false,
+            autoplaySpeed: 2000,
+            prevArrow: '<button class="prev_btn slick-arrow"></button>',
+            nextArrow: '<button class="next_btn slick-arrow"></button>',
+        });
     }
 }

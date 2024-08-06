@@ -189,7 +189,9 @@
         <div class="product_detail_container">
             <div class="row_container">
                 <div class="breadcrumb">
-                    <a href="#">Terug </a>
+                    <a href="#">
+                        <img src="./assets/images/prev.svg" alt="back ">
+                        Terug </a>
                     <p> | </p>
                     <a href="#">Home</a>
                     <p> / </p>
@@ -214,54 +216,169 @@
                         </div>
                         <div class="full_description">
                             <div class="left">
-                                <!-- <div id="product__slider">
-                                    <div class="product__slider-main">
-                                        <div class="slide"><img src="http://dummyimage.com/300" alt=""
-                                                class="img-responsive"></div>
-                                        <div class="slide"><img src="http://dummyimage.com/300" alt=""
-                                                class="img-responsive"></div>
-                                        <div class="slide"><img src="http://dummyimage.com/300" alt=""
-                                                class="img-responsive"></div>
-                                        <div class="slide"><img src="http://dummyimage.com/300" alt=""
-                                                class="img-responsive"></div>
-                                    </div>
-                                    <div class="product__slider-thmb">
-                                        <div class="slide"><img src="http://dummyimage.com/300" alt=""
-                                                class="img-responsive"></div>
-                                        <div class="slide"><img src="http://dummyimage.com/300" alt=""
-                                                class="img-responsive"></div>
-                                        <div class="slide"><img src="http://dummyimage.com/300" alt=""
-                                                class="img-responsive"></div>
-                                        <div class="slide"><img src="http://dummyimage.com/300" alt=""
-                                                class="img-responsive"></div>
-                                    </div>
-                                </div> -->
-
                                 <div class="slider-container">
                                     <div class="slider">
                                         <div class="slide"><img src="http://dummyimage.com/300" alt=""
                                                 class="img-responsive"></div>
-                                        <div class="slide"><img src="http://dummyimage.com/300" alt=""
+                                        <div class="slide"><img src="./assets/images/product.jpg" alt=""
                                                 class="img-responsive"></div>
                                         <!-- More slides as needed -->
                                     </div>
                                     <div class="thumbnails">
                                         <div class="thumb" data-index="0"><img src="http://dummyimage.com/300" alt=""
                                                 class="img-responsive"></div>
-                                        <div class="thumb" data-index="1"><img src="http://dummyimage.com/300" alt=""
+                                        <div class="thumb" data-index="1"><img src="./assets/images/product.jpg" alt=""
                                                 class="img-responsive"></div>
                                     </div>
-                                    <!-- More thumbnails as needed -->
+                                </div>
+                                <!-- Pop-up Gallery -->
+                                <div class="popup-gallery">
+                                    <div class="popup-content">
+                                        <button class="close-btn">&times;</button>
+                                        <button class="prev-btn">&#10094;</button>
+                                        <img src="" alt="Popup Image">
+                                        <button class="next-btn">&#10095;</button>
+                                    </div>
                                 </div>
                             </div>
 
-                            <!-- Pop-up Gallery -->
-                            <div class="popup-gallery">
-                                <div class="popup-content">
-                                    <button class="close-btn">&times;</button>
-                                    <button class="prev-btn">&#10094;</button>
-                                    <img src="" alt="Popup Image">
-                                    <button class="next-btn">&#10095;</button>
+                            <div class="right">
+                                <div class="upper_content">
+                                    <div class="price_container">
+                                        <p class="real_price font_grey ">1399</p>
+                                        <p class="discounted_price">799,-</p>
+                                    </div>
+                                    <div class="approved_container">
+                                        <p class="approved xss box_bg">Op voorraad</p>
+                                        <p class="approved xss">Binnen 10 werkdagen geleverd</p>
+                                    </div>
+                                    <div class="product_review">
+                                        <div class="image_star_container flex">
+                                            <img src="./assets/images/star.png" alt="star icon">
+                                            <img src="./assets/images/star.png" alt="star icon">
+                                            <img src="./assets/images/star.png" alt="star icon">
+                                            <img src="./assets/images/star.png" alt="star icon">
+                                            <img src="./assets/images/half-star.svg" alt="star icon">
+                                        </div>
+                                        <span class="font_grey">(384)</span>
+                                        <!-- if like is yes, the filled heart img will shown  -->
+                                        <a href="#" aria-label="love this product" class="like no">
+                                            <img src="./assets/images/love.svg" alt="love icon" class="doesnt_like">
+                                            <img src="./assets/images/filled-heart.svg" alt="loved icon" class="liked">
+                                        </a>
+                                    </div>
+                                    <div class="button_container">
+                                        <form class="add_to_cart_container">
+                                            <input type="number" name="amount" id="amount" value="1">
+                                            <button type="submit" class="add_cart_btn">
+                                                <img src="./assets/images/cart.svg" alt="cart icon">
+                                                <span>In mijn winkelwagen</span>
+                                            </button>
+                                        </form>
+                                        <a class="add_wishlist">
+                                            <img src="./assets/images/add-list.svg" alt="add to list icon">
+                                            <span>Offerte aanvragen</span>
+                                        </a>
+                                    </div>
+                                    <div class="items_detail_container">
+                                        <div class="item_detail">
+                                            <button class="slide_the_list">Waarom Tuiyn?</button>
+                                            <div class="check_list" style="display: none;">
+                                                <div class="flex column gap-5">
+                                                    <p class="green_check_mark">Beoordeeld op Trustpilot met een 9,8/10!
+                                                    </p>
+                                                    <p class="green_check_mark">Razendsnelle levering</p>
+                                                    <p class="green_check_mark">Razendsnelle levering</p>
+                                                    <p class="green_check_mark">Razendsnelle levering</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="item_detail">
+                                            <button class="slide_the_list">Waarom Tuiyn?</button>
+                                            <div class="check_list" style="display: none;">
+                                                <div class="flex column gap-5">
+                                                    <p class="double-column "><span>Lengte</span><span>450 cm</span></p>
+                                                    <p class="double-column "><span>Lengte</span><span>450 cm</span></p>
+                                                    <p class="double-column "><span>Lengte</span><span>450 cm</span></p>
+                                                    <p class="double-column "><span>Lengte</span><span>450 cm</span></p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                        </div>
+                                        <div class="item_detail">
+                                            <button class="slide_the_list">Details</button>
+                                            <div class="check_list" style="display: none;">
+                                                <div class="flex column gap-5">
+                                                    <p class="double-column "><span>Lengte</span><span>450 cm</span></p>
+                                                    <p class="double-column "><span>Lengte</span><span>450 cm</span></p>
+                                                    <p class="double-column "><span>Lengte</span><span>450 cm</span></p>
+                                                    <p class="double-column "><span>Lengte</span><span>450 cm</span></p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                        </div>
+                                        <div class="item_detail">
+                                            <button class="slide_the_list">Waarom Tuiyn?</button>
+                                            <div class="check_list" style="display: none;">
+                                                <div class="flex column gap-5">
+                                                    <p class="double-column "><span>Lengte</span><span>450 cm</span></p>
+                                                    <p class="double-column "><span>Lengte</span><span>450 cm</span></p>
+                                                    <p class="double-column "><span>Lengte</span><span>450 cm</span></p>
+                                                    <p class="double-column "><span>Lengte</span><span>450 cm</span></p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                        </div>
+                                        <div class="item_detail">
+                                            <button class="slide_the_list">Waarom Tuiyn?</button>
+                                            <div class="check_list" style="display: none;">
+                                                <div class="flex column gap-5">
+                                                    <p class="double-column "><span>Lengte</span><span>450 cm</span></p>
+                                                    <p class="double-column "><span>Lengte</span><span>450 cm</span></p>
+                                                    <p class="double-column "><span>Lengte</span><span>450 cm</span></p>
+                                                    <p class="double-column "><span>Lengte</span><span>450 cm</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card_product_sticky">
+                                    <h3>JOUW BESTELLING</h3>
+                                    <div class="detail_list">
+                                        <div class="list">
+                                            <p>
+                                                Blokhut Anton - Douglas hout - Antraciet - Zadeldak</p>
+                                            <p>1x</p>
+                                            <p>799,-</p>
+                                        </div>
+                                        <div class="list">
+                                            <p>Verstelbare Betonpoer</p>
+                                            <p>2 x</p>
+                                            <p>99,-</p>
+                                        </div>
+                                        <div class="list">
+                                            <p>
+                                                Tuiyn Montage service</p>
+                                            <p>1 x</p>
+                                            <p>79,-</p>
+                                        </div>
+                                        <div class="list">
+                                            <p>Verzending</p>
+                                            <p></p>
+                                            <p>GRATIS</p>
+                                        </div>
+                                        <hr>
+                                        <div class="list total">
+                                            <p>Totaal</p>
+                                            <p></p>
+                                            <p>1.775,-</p>
+                                        </div>
+                                        <a type="submit" class="add_cart_btn">
+                                            <img src="./assets/images/cart.svg" alt="cart icon">
+                                            <span>In mijn winkelwagen</span>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
 
@@ -270,8 +387,97 @@
                     <div class="right"></div>
                 </div>
             </div>
-        </div>
-        </div>
+
+            <section class="deals_container bg_gray">
+                <div class="row_container">
+                    <div class="heading_main_container">
+                        <div class="heading_container flex">
+                            <h2>GOEIE DEALS</h2>
+                            <a href="#">Meer deals >></a>
+                        </div>
+                        <div class="description_heading">
+                            <p>Deze items zijn het vaakst verkocht in de afgelopen 7 dagen</p>
+                        </div>
+                    </div>
+                    <div class="deals_content flex">
+                        <div class="left_side flex">
+                            <div class="item_deal">
+                                <div class="image_item"
+                                    style="background-image: url('./assets/images/yard.jpg'); background-size: contain; height: 150px; background-repeat: no-repeat; background-position: bottom center;">
+                                </div>
+                                <h3>SAUNA OBELIX 5 Persoons</h3>
+                                <p>Vanaf €2500</p>
+                                <a href="#">Meer informatie >></a>
+                            </div>
+                            <div class="item_deal">
+                                <div class="image_item"
+                                    style="background-image: url('./assets/images/yard.jpg'); background-size: contain; height: 150px; background-repeat: no-repeat; background-position: bottom center;">
+                                </div>
+                                <h3>SAUNA OBELIX 5 Persoons</h3>
+                                <p>Vanaf €2500</p>
+                                <a href="#">Meer informatie >></a>
+                            </div>
+                            <div class="item_deal">
+                                <div class="image_item"
+                                    style="background-image: url('./assets/images/yard.jpg'); background-size: contain; height: 150px; background-repeat: no-repeat; background-position: bottom center;">
+                                </div>
+                                <h3>SAUNA OBELIX 5 Persoons</h3>
+                                <p>Vanaf €2500</p>
+                                <a href="#">Meer informatie >></a>
+                            </div>
+                        </div>
+                        <div class="right_side flex">
+                            <div class="main_sale">
+                                <div class="sale_image">
+                                    <img src="./assets/images/yard.jpg" alt="the alt">
+                                </div>
+                                <h3>SALE</h3>
+                                <p>Tot wel 30% korting!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="categories_card_container">
+                <div class="row_container">
+                    <div class="heading_container flex">
+                        <h2>UITGELICHTE CATEGORIËN</h2>
+                        <a href="#">Alle categorieën >></a>
+                    </div>
+                    <div class="categories_container">
+                        <div class="category_card flex"
+                            style="background-image: url(./assets/images/jac.jpg); background-position: center; background-size: cover;">
+                            <h3>JACUZZI’S</h3>
+                            <p>Heerlijk bubbelen in je eigen achtertuin</p>
+                            <a href="#" class="green_btn with_arrow">JACUZZI’S</a>
+                        </div>
+                        <div class="category_card flex"
+                            style="background-image: url(./assets/images/jac.jpg); background-position: center; background-size: cover;">
+                            <h3>JACUZZI’S</h3>
+                            <p>Heerlijk bubbelen in je eigen achtertuin</p>
+                            <a href="#" class="green_btn with_arrow">JACUZZI’S</a>
+                        </div>
+                        <div class="category_card flex"
+                            style="background-image: url(./assets/images/jac.jpg); background-position: center; background-size: cover;">
+                            <h3>JACUZZI’S</h3>
+                            <p>Heerlijk bubbelen in je eigen achtertuin</p>
+                            <a href="#" class="green_btn with_arrow">JACUZZI’S</a>
+                        </div>
+                        <div class="category_card flex"
+                            style="background-image: url(./assets/images/jac.jpg); background-position: center; background-size: cover;">
+                            <h3>JACUZZI’S</h3>
+                            <p>Heerlijk bubbelen in je eigen achtertuin</p>
+                            <a href="#" class="green_btn with_arrow">JACUZZI’S</a>
+                        </div>
+                        <div class="category_card flex"
+                            style="background-image: url(./assets/images/jac.jpg); background-position: center; background-size: cover;">
+                            <h3>JACUZZI’S</h3>
+                            <p>Heerlijk bubbelen in je eigen achtertuin</p>
+                            <a href="#" class="green_btn with_arrow">JACUZZI’S</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
 
