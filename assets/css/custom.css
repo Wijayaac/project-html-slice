@@ -1906,6 +1906,8 @@ input[type="number"]::after {
 
 .add_cart_btn img {
     height: 80%;
+    width: 30px;
+    object-fit: contain;
 }
 
 .add_wishlist {
@@ -1931,4 +1933,43 @@ input[type="number"]::after {
 
 .product_detail_content .items_detail_container hr {
     margin: 0;
+}
+
+.card_product_sticky {
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+    padding: 20px 30px;
+}
+
+.card_product_sticky .list {
+    color: var(--dark-grey);
+    display: grid;
+    grid-template-columns: auto 80px 90px;
+    font-size: var(--xs);
+    margin-top: 15px;
+    gap: 10px;
+}
+
+.card_product_sticky .list p:nth-child(2) {
+    text-align: center;
+}
+
+.card_product_sticky .list:last-child {
+    margin-bottom: 0;
+}
+
+.card_product_sticky .list.total p,
+.card_product_sticky h3 {
+    font-size: var(--sm);
+    font-weight: bold;
+    color: var(--black);
+}
+
+a.add_cart_btn {
+    padding: 0 20px;
+    min-height: 39px;
+}
+
+a.add_cart_btn img {
+    width: auto;
 }
