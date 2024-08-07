@@ -1148,14 +1148,14 @@ body.no-scroll {
     color: var(--dark-grey);
     font-size: var(--xss);
     margin: 10px 0 20px;
+    flex-wrap: wrap;
 }
 
 .full_description {
     display: grid;
-    grid-template-columns: 60% 40%;
-    gap: 50px;
+    grid-template-columns: 60% 37%;
+    gap: 3%;
 }
-
 
 /* slick */
 .product__slider-main {
@@ -1578,11 +1578,14 @@ button.remove_all_active_filter {
 .products_result_header._4 {
     grid-template-columns: repeat(4, 1fr);
     margin-top: 0;
+    width: 100%;
+    max-width: 100%;
 }
 
 .product_container {
     border: 1px solid var(--border-color);
     border-radius: 12px;
+    width: 100%;
     padding: 15px 20px;
 }
 
@@ -1864,6 +1867,10 @@ input[type="number"]::after {
     border-radius: 15px;
     padding: 20px 30px;
     margin-top: 20px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px;
+    margin-bottom: 20px;
 }
 
 .card_product_sticky .list {
@@ -2020,6 +2027,11 @@ a.details_link {
     max-height: 400px;
 }
 
+.product_picture .slick-slide img {
+    object-fit: contain;
+    width: 100%;
+}
+
 .popup_image {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -2066,4 +2078,65 @@ a.details_link {
 
 .slider_product_container hr {
     margin: 20px 0;
+}
+
+
+@media screen and (max-width: 1028px) {
+    .full_description {
+        grid-template-columns: 100%;
+        gap: 20px;
+    }
+
+    .upper_content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .button_container,
+    .srt_upper {
+        width: 50%;
+    }
+
+    .items_detail_container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 611px) {
+
+    .button_container,
+    .srt_upper {
+        width: 100%;
+    }
+
+    .add_to_cart_container {
+        grid-template-columns: 40px auto;
+    }
+
+    #amount {
+        font-size: 16px;
+    }
+
+    .add_wishlist {
+        min-height: 24px;
+    }
+
+    .card_product_sticky {
+        padding: 15px 10px;
+    }
+
+    .card_product_sticky .list {
+        grid-template-columns: auto 30px 67px;
+    }
+
+    .card_product_sticky .list.total p:nth-child(2) {
+        display: none;
+    }
+
+    .card_product_sticky .list.total {
+        grid-template-columns: repeat(2, max-content);
+        justify-content: space-between;
+    }
 }
