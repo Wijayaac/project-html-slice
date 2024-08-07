@@ -10,7 +10,27 @@ jQuery(document).ready(function ($) {
     slideUpandDownFilter($);
     slickItems($);
     likeTheProduct($);
+    slickSames($);
+    Fancybox.bind("[data-fancybox]", {
+        // Your custom options
+    });
+
 });
+
+function slickSames($) {
+    if ($(".slider_samenstellen").length > 0) {
+        $('.slider_samenstellen').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            variableWidth: false,
+            autoplay: false,
+            fade: true,
+            prevArrow: '<button class="prev_btn slick-arrow _reposition"></button>',
+            nextArrow: '<button class="next_btn slick-arrow _reposition"></button>',
+        });
+    }
+}
 
 function likeTheProduct($) {
     if ($(".like").length > 0) {
