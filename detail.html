@@ -13,11 +13,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
     <link rel="stylesheet" href="./assets/css/custom.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
+    <style>
+        .deals_container,
+        .categories_card_container__detail,
+        footer,
+        header {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -216,56 +223,308 @@
                         </div>
                         <div class="full_description">
                             <div class="left">
-                                <div class="slider-container">
-                                    <div class="slider">
-                                        <div class="slide"><img src="http://dummyimage.com/300" alt=""
-                                                class="img-responsive"></div>
-                                        <div class="slide"><img src="./assets/images/product.jpg" alt=""
-                                                class="img-responsive"></div>
-                                        <!-- More slides as needed -->
+                                <div class="slider_product_container">
+                                    <div class="slider_samenstellen product_picture">
+                                        <div class="product_container">
+                                            <div class="header_product">
+                                                <p>
+                                                    <span class="discount">-33%</span>
+                                                    <span class="aanbieding">Aanbieding</span>
+                                                </p>
+                                            </div>
+                                            <div class="image_container">
+                                                <img src="./assets/images/product.jpg" alt="product a">
+                                            </div>
+                                        </div>
+                                        <div class="product_container">
+                                            <div class="header_product">
+                                                <p>
+                                                    <span class="aanbieding">Aanbieding</span>
+                                                </p>
+                                            </div>
+                                            <div class="image_container">
+                                                <img src="./assets/images/product.jpg" alt="product a">
+                                            </div>
+                                        </div>
+                                        <div class="product_container">
+                                            <div class="header_product">
+                                                <p>
+                                                    <span class="discount">-33%</span>
+                                                </p>
+                                            </div>
+                                            <div class="image_container">
+                                                <img src="./assets/images/product.jpg" alt="product a">
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="thumbnails">
-                                        <div class="thumb" data-index="0"><img src="http://dummyimage.com/300" alt=""
-                                                class="img-responsive"></div>
-                                        <div class="thumb" data-index="1"><img src="./assets/images/product.jpg" alt=""
-                                                class="img-responsive"></div>
+
+                                    <div class="popup_image">
+                                        <a href="http://dummyimage.com/300" data-fancybox="gallery"
+                                            data-caption="Caption #1">
+                                            <img src="http://dummyimage.com/300" alt="" class="img-responsive">
+                                        </a>
+                                        <a href="http://dummyimage.com/300" data-fancybox="gallery"
+                                            data-caption="Caption #1" class="image">
+                                            <img src="http://dummyimage.com/300" alt="" class="img-responsive">
+                                        </a>
+                                        <a href="http://dummyimage.com/300" data-fancybox="gallery"
+                                            data-caption="Caption #1" class="video">
+                                            <img src="http://dummyimage.com/300" alt="" class="img-responsive">
+                                        </a>
+                                        <a href="./assets/images/product.jpg" data-fancybox="gallery"
+                                            data-caption="Caption #2">
+                                            <img src="./assets/images/product.jpg" alt="" class="img-responsive">
+                                        </a>
+                                    </div>
+                                    <hr>
+                                </div>
+
+                                <div class="more_description">
+                                    <p class="title">
+                                        <strong>Productomschrijving</strong>
+                                    </p>
+                                    <div class="item_detail">
+                                        <p>Breng een vleugje charme en functionaliteit naar uw tuin met Blokhut Anton,
+                                            een veelzijdige en stijlvolle toevoeging voor elke buitenruimte. Deze
+                                            hoogwaardige blokhut is ontworpen met oog voor detail en vakmanschap, en
+                                            biedt een ideale oplossing voor extra opslagruimte, een gezellige tuinlounge
+                                            of zelfs een thuiskantoor.</p>
+                                        <button class="slide_the_list _see_more">Lees meer</button>
+                                        <div class="check_list _more_content" style="display: none;">
+                                            <p>Breng een vleugje charme en functionaliteit naar uw tuin met Blokhut
+                                                Anton,
+                                                een veelzijdige en stijlvolle toevoeging voor elke buitenruimte. Deze
+                                                hoogwaardige blokhut is ontworpen met oog voor detail en vakmanschap, en
+                                                biedt een ideale oplossing voor extra opslagruimte, een gezellige
+                                                tuinlounge
+                                                of zelfs een thuiskantoor.</p>
+                                        </div>
                                     </div>
                                 </div>
-                                <!-- Pop-up Gallery -->
-                                <div class="popup-gallery">
-                                    <div class="popup-content">
-                                        <button class="close-btn">&times;</button>
-                                        <button class="prev-btn">&#10094;</button>
-                                        <img src="" alt="Popup Image">
-                                        <button class="next-btn">&#10095;</button>
+
+                                <div class="samenstellen">
+                                    <h2>PRODUCT SAMENSTELLEN</h2>
+                                    <div class="slider_samenstellen">
+                                        <div class="item_samenstellen">
+                                            <img src="./assets/images/step.jpg" alt="step" class="step_by"
+                                                height="30px">
+                                            <div class="short_description">
+                                                <p><strong>Montageservice</strong></p>
+                                                <p>Kies om het zelf te doen of laat je het liever in elkaar zetten door
+                                                    een van onze profesionals? Wij hebben een team van ervaren vakmannen
+                                                    die het met liefde voor u in elkaar zetten!
+                                                </p>
+                                            </div>
+                                            <div class="item_double">
+                                                <div class="card_image_left">
+                                                    <div class="the_image">
+                                                        <img src="./assets/images/people-pointing-half.png" alt=""
+                                                            width="100%" geu>
+                                                    </div>
+                                                    <div class="the_detail flex gap-10 column">
+                                                        <p><strong>Tuiyn-Topperservice</strong></p>
+                                                        <p>Nog niet beschikbaar</p>
+                                                        <a href="#" class="bg_green font_white">Toevoegen</a>
+                                                        <a href="#" class="details_link">Details</a>
+                                                    </div>
+                                                </div>
+                                                <div class="card_image_left">
+                                                    <div class="the_image">
+                                                        <img src="./assets/images/people-pointing-half.png" alt=""
+                                                            width="100%" geu>
+                                                    </div>
+                                                    <div class="the_detail flex gap-10 column">
+                                                        <p><strong>Tuiyn-Topperservice</strong></p>
+                                                        <p>Nog niet beschikbaar</p>
+                                                        <a href="#" class="bg_green font_white">Toevoegen</a>
+                                                        <a href="#" class="details_link">Details</a>
+                                                    </div>
+                                                </div>
+                                                <div class="card_image_left">
+                                                    <div class="the_image">
+                                                        <img src="./assets/images/people-pointing-half.png" alt=""
+                                                            width="100%" geu>
+                                                    </div>
+                                                    <div class="the_detail flex gap-10 column">
+                                                        <p><strong>Tuiyn-Topperservice</strong></p>
+                                                        <p>Nog niet beschikbaar</p>
+                                                        <a href="#" class="bg_green font_white">Toevoegen</a>
+                                                        <a href="#" class="details_link">Details</a>
+                                                    </div>
+                                                </div>
+                                                <div class="card_image_left">
+                                                    <div class="the_image">
+                                                        <img src="./assets/images/people-pointing-half.png" alt=""
+                                                            width="100%" geu>
+                                                    </div>
+                                                    <div class="the_detail flex gap-10 column">
+                                                        <p><strong>Tuiyn-Topperservice</strong></p>
+                                                        <p>Nog niet beschikbaar</p>
+                                                        <a href="#" class="bg_green font_white">Toevoegen</a>
+                                                        <a href="#" class="details_link">Details</a>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="bg_gray font_grey">Vorige</a>
+                                                <a href="#" class="bg_green font_white">Volgende</a>
+                                            </div>
+                                        </div>
+                                        <div class="item_samenstellen">
+                                            <img src="./assets/images/step.jpg" alt="step" class="step_by"
+                                                height="30px">
+                                            <div class="short_description">
+                                                <p><strong>Montageservice</strong></p>
+                                                <p>Kies om het zelf te doen of laat je het liever in elkaar zetten door
+                                                    een van onze profesionals? Wij hebben een team van ervaren vakmannen
+                                                    die het met liefde voor u in elkaar zetten!
+                                                </p>
+                                            </div>
+                                            <div class="item_double">
+                                                <div class="card_image_left">
+                                                    <div class="the_image">
+                                                        <img src="./assets/images/people-pointing-half.png" alt=""
+                                                            width="100%" geu>
+                                                    </div>
+                                                    <div class="the_detail flex gap-10 column">
+                                                        <p><strong>Tuiyn-Topperservice</strong></p>
+                                                        <p>Nog niet beschikbaar</p>
+                                                        <a href="#" class="bg_green font_white">Toevoegen</a>
+                                                        <a href="#" class="details_link">Details</a>
+                                                    </div>
+                                                </div>
+                                                <div class="card_image_left">
+                                                    <div class="the_image">
+                                                        <img src="./assets/images/people-pointing-half.png" alt=""
+                                                            width="100%" geu>
+                                                    </div>
+                                                    <div class="the_detail flex gap-10 column">
+                                                        <p><strong>Tuiyn-Topperservice</strong></p>
+                                                        <p>Nog niet beschikbaar</p>
+                                                        <a href="#" class="bg_green font_white">Toevoegen</a>
+                                                        <a href="#" class="details_link">Details</a>
+                                                    </div>
+                                                </div>
+                                                <div class="card_image_left">
+                                                    <div class="the_image">
+                                                        <img src="./assets/images/people-pointing-half.png" alt=""
+                                                            width="100%" geu>
+                                                    </div>
+                                                    <div class="the_detail flex gap-10 column">
+                                                        <p><strong>Tuiyn-Topperservice</strong></p>
+                                                        <p>Nog niet beschikbaar</p>
+                                                        <a href="#" class="bg_green font_white">Toevoegen</a>
+                                                        <a href="#" class="details_link">Details</a>
+                                                    </div>
+                                                </div>
+                                                <div class="card_image_left">
+                                                    <div class="the_image">
+                                                        <img src="./assets/images/people-pointing-half.png" alt=""
+                                                            width="100%" geu>
+                                                    </div>
+                                                    <div class="the_detail flex gap-10 column">
+                                                        <p><strong>Tuiyn-Topperservice</strong></p>
+                                                        <p>Nog niet beschikbaar</p>
+                                                        <a href="#" class="bg_green font_white">Toevoegen</a>
+                                                        <a href="#" class="details_link">Details</a>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="bg_gray font_grey">Vorige</a>
+                                                <a href="#" class="bg_green font_white">Volgende</a>
+                                            </div>
+                                        </div>
+                                        <div class="item_samenstellen">
+                                            <img src="./assets/images/step.jpg" alt="step" class="step_by"
+                                                height="30px">
+                                            <div class="short_description">
+                                                <p><strong>Montageservice</strong></p>
+                                                <p>Kies om het zelf te doen of laat je het liever in elkaar zetten door
+                                                    een van onze profesionals? Wij hebben een team van ervaren vakmannen
+                                                    die het met liefde voor u in elkaar zetten!
+                                                </p>
+                                            </div>
+                                            <div class="item_double">
+                                                <div class="card_image_left">
+                                                    <div class="the_image">
+                                                        <img src="./assets/images/people-pointing-half.png" alt=""
+                                                            width="100%" geu>
+                                                    </div>
+                                                    <div class="the_detail flex gap-10 column">
+                                                        <p><strong>Tuiyn-Topperservice</strong></p>
+                                                        <p>Nog niet beschikbaar</p>
+                                                        <a href="#" class="bg_green font_white">Toevoegen</a>
+                                                        <a href="#" class="details_link">Details</a>
+                                                    </div>
+                                                </div>
+                                                <div class="card_image_left">
+                                                    <div class="the_image">
+                                                        <img src="./assets/images/people-pointing-half.png" alt=""
+                                                            width="100%" geu>
+                                                    </div>
+                                                    <div class="the_detail flex gap-10 column">
+                                                        <p><strong>Tuiyn-Topperservice</strong></p>
+                                                        <p>Nog niet beschikbaar</p>
+                                                        <a href="#" class="bg_green font_white">Toevoegen</a>
+                                                        <a href="#" class="details_link">Details</a>
+                                                    </div>
+                                                </div>
+                                                <div class="card_image_left">
+                                                    <div class="the_image">
+                                                        <img src="./assets/images/people-pointing-half.png" alt=""
+                                                            width="100%" geu>
+                                                    </div>
+                                                    <div class="the_detail flex gap-10 column">
+                                                        <p><strong>Tuiyn-Topperservice</strong></p>
+                                                        <p>Nog niet beschikbaar</p>
+                                                        <a href="#" class="bg_green font_white">Toevoegen</a>
+                                                        <a href="#" class="details_link">Details</a>
+                                                    </div>
+                                                </div>
+                                                <div class="card_image_left">
+                                                    <div class="the_image">
+                                                        <img src="./assets/images/people-pointing-half.png" alt=""
+                                                            width="100%" geu>
+                                                    </div>
+                                                    <div class="the_detail flex gap-10 column">
+                                                        <p><strong>Tuiyn-Topperservice</strong></p>
+                                                        <p>Nog niet beschikbaar</p>
+                                                        <a href="#" class="bg_green font_white">Toevoegen</a>
+                                                        <a href="#" class="details_link">Details</a>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="bg_gray font_grey">Vorige</a>
+                                                <a href="#" class="bg_green font_white">Volgende</a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="right">
                                 <div class="upper_content">
-                                    <div class="price_container">
-                                        <p class="real_price font_grey ">1399</p>
-                                        <p class="discounted_price">799,-</p>
-                                    </div>
-                                    <div class="approved_container">
-                                        <p class="approved xss box_bg">Op voorraad</p>
-                                        <p class="approved xss">Binnen 10 werkdagen geleverd</p>
-                                    </div>
-                                    <div class="product_review">
-                                        <div class="image_star_container flex">
-                                            <img src="./assets/images/star.png" alt="star icon">
-                                            <img src="./assets/images/star.png" alt="star icon">
-                                            <img src="./assets/images/star.png" alt="star icon">
-                                            <img src="./assets/images/star.png" alt="star icon">
-                                            <img src="./assets/images/half-star.svg" alt="star icon">
+                                    <div class="srt_upper">
+                                        <div class="price_container">
+                                            <p class="real_price font_grey ">1399</p>
+                                            <p class="discounted_price">799,-</p>
                                         </div>
-                                        <span class="font_grey">(384)</span>
-                                        <!-- if like is yes, the filled heart img will shown  -->
-                                        <a href="#" aria-label="love this product" class="like no">
-                                            <img src="./assets/images/love.svg" alt="love icon" class="doesnt_like">
-                                            <img src="./assets/images/filled-heart.svg" alt="loved icon" class="liked">
-                                        </a>
+                                        <div class="approved_container">
+                                            <p class="approved xss box_bg">Op voorraad</p>
+                                            <p class="approved xss">Binnen 10 werkdagen geleverd</p>
+                                        </div>
+                                        <div class="product_review">
+                                            <div class="image_star_container flex">
+                                                <img src="./assets/images/star.png" alt="star icon">
+                                                <img src="./assets/images/star.png" alt="star icon">
+                                                <img src="./assets/images/star.png" alt="star icon">
+                                                <img src="./assets/images/star.png" alt="star icon">
+                                                <img src="./assets/images/half-star.svg" alt="star icon">
+                                            </div>
+                                            <span class="font_grey">(384)</span>
+                                            <!-- if like is yes, the filled heart img will shown  -->
+                                            <a href="#" aria-label="love this product" class="like no">
+                                                <img src="./assets/images/love.svg" alt="love icon" class="doesnt_like">
+                                                <img src="./assets/images/filled-heart.svg" alt="loved icon"
+                                                    class="liked">
+                                            </a>
+                                        </div>
                                     </div>
                                     <div class="button_container">
                                         <form class="add_to_cart_container">
@@ -381,7 +640,6 @@
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                     <div class="right"></div>
@@ -392,59 +650,207 @@
                 <div class="row_container">
                     <div class="heading_main_container">
                         <div class="heading_container flex">
-                            <h2>GOEIE DEALS</h2>
+                            <h2>VAAK SAMEN GEKOCHT</h2>
                             <a href="#">Meer deals >></a>
                         </div>
                         <div class="description_heading">
-                            <p>Deze items zijn het vaakst verkocht in de afgelopen 7 dagen</p>
+                            <p>Deze items zijn een fantastische combinatie met het product dat u aan het bekijken bent!
+                            </p>
                         </div>
                     </div>
                     <div class="deals_content flex">
-                        <div class="left_side flex">
-                            <div class="item_deal">
-                                <div class="image_item"
-                                    style="background-image: url('./assets/images/yard.jpg'); background-size: contain; height: 150px; background-repeat: no-repeat; background-position: bottom center;">
-                                </div>
-                                <h3>SAUNA OBELIX 5 Persoons</h3>
-                                <p>Vanaf €2500</p>
-                                <a href="#">Meer informatie >></a>
+                        <div class="item_deal">
+                            <div class="image_item"
+                                style="background-image: url('./assets/images/yard.jpg'); background-size: contain; height: 150px; background-repeat: no-repeat; background-position: bottom center;">
                             </div>
-                            <div class="item_deal">
-                                <div class="image_item"
-                                    style="background-image: url('./assets/images/yard.jpg'); background-size: contain; height: 150px; background-repeat: no-repeat; background-position: bottom center;">
-                                </div>
-                                <h3>SAUNA OBELIX 5 Persoons</h3>
-                                <p>Vanaf €2500</p>
-                                <a href="#">Meer informatie >></a>
-                            </div>
-                            <div class="item_deal">
-                                <div class="image_item"
-                                    style="background-image: url('./assets/images/yard.jpg'); background-size: contain; height: 150px; background-repeat: no-repeat; background-position: bottom center;">
-                                </div>
-                                <h3>SAUNA OBELIX 5 Persoons</h3>
-                                <p>Vanaf €2500</p>
-                                <a href="#">Meer informatie >></a>
-                            </div>
+                            <h3>SAUNA OBELIX 5 Persoons</h3>
+                            <p>Vanaf €2500</p>
+                            <a href="#">Meer informatie >></a>
                         </div>
-                        <div class="right_side flex">
-                            <div class="main_sale">
-                                <div class="sale_image">
-                                    <img src="./assets/images/yard.jpg" alt="the alt">
-                                </div>
-                                <h3>SALE</h3>
-                                <p>Tot wel 30% korting!</p>
+                        <div class="item_deal">
+                            <div class="image_item"
+                                style="background-image: url('./assets/images/yard.jpg'); background-size: contain; height: 150px; background-repeat: no-repeat; background-position: bottom center;">
                             </div>
+                            <h3>SAUNA OBELIX 5 Persoons</h3>
+                            <p>Vanaf €2500</p>
+                            <a href="#">Meer informatie >></a>
+                        </div>
+                        <div class="item_deal">
+                            <div class="image_item"
+                                style="background-image: url('./assets/images/yard.jpg'); background-size: contain; height: 150px; background-repeat: no-repeat; background-position: bottom center;">
+                            </div>
+                            <h3>SAUNA OBELIX 5 Persoons</h3>
+                            <p>Vanaf €2500</p>
+                            <a href="#">Meer informatie >></a>
+                        </div>
+                        <div class="item_deal">
+                            <div class="image_item"
+                                style="background-image: url('./assets/images/yard.jpg'); background-size: contain; height: 150px; background-repeat: no-repeat; background-position: bottom center;">
+                            </div>
+                            <h3>SAUNA OBELIX 5 Persoons</h3>
+                            <p>Vanaf €2500</p>
+                            <a href="#">Meer informatie >></a>
+                        </div>
+                        <div class="item_deal">
+                            <div class="image_item"
+                                style="background-image: url('./assets/images/yard.jpg'); background-size: contain; height: 150px; background-repeat: no-repeat; background-position: bottom center;">
+                            </div>
+                            <h3>SAUNA OBELIX 5 Persoons</h3>
+                            <p>Vanaf €2500</p>
+                            <a href="#">Meer informatie >></a>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="categories_card_container">
+            <section class="categories_card_container__detail">
                 <div class="row_container">
                     <div class="heading_container flex">
-                        <h2>UITGELICHTE CATEGORIËN</h2>
-                        <a href="#">Alle categorieën >></a>
+                        <h2>SHOP MEER!</h2>
                     </div>
-                    <div class="categories_container">
+                    <div class="products_result_header _4">
+                        <div class="product_container">
+                            <div class="header_product">
+                                <p>
+                                    <span class="discount">-33%</span>
+                                    <span class="aanbieding">Aanbieding</span>
+                                </p>
+                            </div>
+                            <div class="image_container">
+                                <img src="./assets/images/product.jpg" alt="product a">
+                            </div>
+                            <div class="product_review">
+                                <span>Tuiyn</span>
+                                <div class="image_star_container flex">
+                                    <img src="./assets/images/star.png" alt="star icon">
+                                    <img src="./assets/images/star.png" alt="star icon">
+                                    <img src="./assets/images/star.png" alt="star icon">
+                                    <img src="./assets/images/star.png" alt="star icon">
+                                    <img src="./assets/images/half-star.svg" alt="star icon">
+                                </div>
+                                <span>(384)</span>
+                            </div>
+                            <div class="product_description">
+                                <h4> Blokhut Chapin </h4>
+                                <p class="flexible font_grey xss">Flexibele deurplaatsing</p>
+                                <p class="approved xss">Op voorraad</p>
+                            </div>
+                            <div class="price_container">
+                                <p class="real_price font_grey ">1399</p>
+                                <p class="discounted_price">799,-</p>
+                            </div>
+                            <p class="art_number font_grey xss">Art.nummer: 12345678</p>
+                        </div>
+                        <div class="product_container">
+                            <div class="header_product">
+                                <p>
+                                    <span class="discount">-33%</span>
+                                    <span class="aanbieding">Aanbieding</span>
+                                </p>
+                            </div>
+                            <div class="image_container">
+                                <img src="./assets/images/product.jpg" alt="product a">
+                            </div>
+                            <div class="product_review">
+                                <span>Tuiyn</span>
+                                <div class="image_star_container flex">
+                                    <img src="./assets/images/star.png" alt="star icon">
+                                    <img src="./assets/images/star.png" alt="star icon">
+                                    <img src="./assets/images/star.png" alt="star icon">
+                                    <img src="./assets/images/star.png" alt="star icon">
+                                    <img src="./assets/images/half-star.svg" alt="star icon">
+                                </div>
+                                <span>(384)</span>
+                            </div>
+                            <div class="product_description">
+                                <h4> Blokhut Chapin </h4>
+                                <p class="flexible font_grey xss">Flexibele deurplaatsing</p>
+                                <p class="approved xss">Op voorraad</p>
+                            </div>
+                            <div class="price_container">
+                                <p class="real_price font_grey ">1399</p>
+                                <p class="discounted_price">799,-</p>
+                            </div>
+                            <p class="art_number font_grey xss">Art.nummer: 12345678</p>
+                        </div>
+                        <div class="product_container">
+                            <div class="header_product">
+                                <p>
+                                    <span class="discount">-33%</span>
+                                    <span class="aanbieding">Aanbieding</span>
+                                </p>
+                            </div>
+                            <div class="image_container">
+                                <img src="./assets/images/product.jpg" alt="product a">
+                            </div>
+                            <div class="product_review">
+                                <span>Tuiyn</span>
+                                <div class="image_star_container flex">
+                                    <img src="./assets/images/star.png" alt="star icon">
+                                    <img src="./assets/images/star.png" alt="star icon">
+                                    <img src="./assets/images/star.png" alt="star icon">
+                                    <img src="./assets/images/star.png" alt="star icon">
+                                    <img src="./assets/images/half-star.svg" alt="star icon">
+                                </div>
+                                <span>(384)</span>
+                            </div>
+                            <div class="product_description">
+                                <h4> Blokhut Chapin </h4>
+                                <p class="flexible font_grey xss">Flexibele deurplaatsing</p>
+                                <p class="approved xss">Op voorraad</p>
+                            </div>
+                            <div class="price_container">
+                                <p class="real_price font_grey ">1399</p>
+                                <p class="discounted_price">799,-</p>
+                            </div>
+                            <p class="art_number font_grey xss">Art.nummer: 12345678</p>
+                        </div>
+                        <div class="product_container">
+                            <div class="header_product">
+                                <p>
+                                    <span class="discount">-33%</span>
+                                    <span class="aanbieding">Aanbieding</span>
+                                </p>
+                            </div>
+                            <div class="image_container">
+                                <img src="./assets/images/product.jpg" alt="product a">
+                            </div>
+                            <div class="product_review">
+                                <span>Tuiyn</span>
+                                <div class="image_star_container flex">
+                                    <img src="./assets/images/star.png" alt="star icon">
+                                    <img src="./assets/images/star.png" alt="star icon">
+                                    <img src="./assets/images/star.png" alt="star icon">
+                                    <img src="./assets/images/star.png" alt="star icon">
+                                    <img src="./assets/images/half-star.svg" alt="star icon">
+                                </div>
+                                <span>(384)</span>
+                            </div>
+                            <div class="product_description">
+                                <h4> Blokhut Chapin </h4>
+                                <p class="flexible font_grey xss">Flexibele deurplaatsing</p>
+                                <p class="approved xss">Op voorraad</p>
+                            </div>
+                            <div class="price_container">
+                                <p class="real_price font_grey ">1399</p>
+                                <p class="discounted_price">799,-</p>
+                            </div>
+                            <p class="art_number font_grey xss">Art.nummer: 12345678</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="categories_card_container__detail">
+                <div class="row_container">
+                    <div class="heading_container flex">
+                        <h2>SHOP MEER!</h2>
+                    </div>
+                    <div class="categories_container ">
+                        <div class="category_card flex"
+                            style="background-image: url(./assets/images/jac.jpg); background-position: center; background-size: cover;">
+                            <h3>JACUZZI’S</h3>
+                            <p>Heerlijk bubbelen in je eigen achtertuin</p>
+                            <a href="#" class="green_btn with_arrow">JACUZZI’S</a>
+                        </div>
                         <div class="category_card flex"
                             style="background-image: url(./assets/images/jac.jpg); background-position: center; background-size: cover;">
                             <h3>JACUZZI’S</h3>
