@@ -17,15 +17,72 @@ button {
 	flex-direction: column;
 }
 
-@media only screen and (max-width: 1028px) {}
-
-@media screen and (min-width: 1028px) {
-	.menu_btn {
-		display: none;
-	}
-
+.filter_toggle {
+	background-color: var(--green);
+	padding: 10px;
+	color: var(--white);
+	border-radius: 4px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	bottom: 30px;
+	width: 100%;
+	max-width: 80%;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 10;
 }
 
+.filter_close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 30px;
+	height: 30px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.filter_close img {
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+	pointer-events: none;
+}
+
+.filter_overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	top: 0;
+	left: 0;
+	z-index: 90;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.3s ease;
+}
+
+.filter_overlay.active {
+	opacity: 1;
+	visibility: visible;
+	transition: opacity 0.3s ease;
+}
+
+@media screen and (min-width: 1028px) {
+
+	.menu_btn,
+	.filter_toggle,
+	.filter_close {
+		display: none;
+	}
+}
+
+footer {
+	z-index: 100;
+}
 
 @media screen and (max-width: 1028px) {
 	:root {
@@ -285,6 +342,69 @@ button {
 		width: 30px;
 		height: 30px;
 	}
+
+	/* Filter page */
+	.breadcrumb {
+		padding: 16px 0;
+	}
+
+	.category_page {
+		grid-template-columns: 1fr;
+		padding-top: 24px;
+		padding-bottom: 24px;
+		position: relative;
+	}
+
+	/* filter section */
+	.breadcrumb_container {
+		grid-template-columns: 1fr;
+	}
+
+	.filter_section {
+		padding-right: 0;
+		position: fixed;
+		height: 100vh;
+		background-color: var(--white);
+		padding: 24px 24px 60px 24px;
+		top: 0;
+		overflow-y: auto;
+		z-index: 99;
+		opacity: 0;
+		visibility: hidden;
+		box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+		transition: opacity 0.3s ease;
+	}
+
+	.filter_section.active {
+		opacity: 1;
+		visibility: visible;
+		transition: opacity 0.3s ease;
+	}
+
+	.categories_result {
+		position: relative;
+		padding-top: 24px;
+	}
+
+	.item_filter {
+		width: 100%;
+	}
+
+	.products_result_header {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	/* result */
+	.image_container {
+		width: 100%;
+	}
+
+	.image_container img {
+		width: 100%;
+		object-fit: contain;
+		height: auto;
+		object-position: center;
+	}
 }
 
 
@@ -325,5 +445,10 @@ button {
 	.menu_item_cards {
 		grid-template-columns: 1fr;
 		gap: 40px;
+	}
+
+	/* filter page result */
+	.products_result_header {
+		grid-template-columns: repeat(2, 1fr);
 	}
 }
