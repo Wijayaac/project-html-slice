@@ -2120,7 +2120,7 @@ a.details_link {
   position: relative;
 }
 
-.main_menu_list::after {
+.main_menu_list.has_submenu::after {
   background-color: white;
   content: "";
   color: white;
@@ -2215,6 +2215,11 @@ a.details_link {
   display: grid;
 }
 
+.input_card input[type="date"]::placeholder,
+.input_card input::placeholder {
+  color: var(--border-color);
+}
+
 .input_card input:not([type="radio"]),
 .input_card textarea {
   padding: 5px 10px;
@@ -2223,7 +2228,7 @@ a.details_link {
   margin: 8px 0;
   border-radius: 4px;
   outline: none;
-  border: 1px solid var(--border-color-darken);
+  border: 1px solid var(--border-color);
   display: block;
   width: 100%;
 
