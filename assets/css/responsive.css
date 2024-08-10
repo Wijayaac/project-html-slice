@@ -71,6 +71,10 @@ button {
 	transition: opacity 0.3s ease;
 }
 
+footer {
+	z-index: 100;
+}
+
 @media screen and (min-width: 1028px) {
 
 	.menu_btn,
@@ -80,8 +84,10 @@ button {
 	}
 }
 
-footer {
-	z-index: 100;
+@media screen and (max-width: 1300px) {
+	.products_result_header._4 {
+		grid-template-columns: repeat(3, 1fr);
+	}
 }
 
 @media screen and (max-width: 1028px) {
@@ -188,7 +194,7 @@ footer {
 		flex-direction: column;
 		padding: 40px 0;
 		align-items: flex-start;
-		gap: 16px;
+		gap: 10px;
 	}
 
 	.categories_container {
@@ -214,8 +220,8 @@ footer {
 		min-height: 250px;
 	}
 
-	.category_card:first-child a,
-	.category_card:nth-child(2) a,
+	.categories_card_container .category_card:first-child a,
+	.categories_card_container .category_card:nth-child(2) a,
 	.category_card a {
 		padding: 10px 20px;
 		width: 100%;
@@ -407,8 +413,26 @@ footer {
 	}
 }
 
+@media screen and (max-width: 990px) {
+	.products_result_header._4 {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
 
 @media screen and (max-width: 767px) {
+	.products_result_header._4 {
+		grid-template-columns: 1fr;
+		gap: 15px;
+		margin-bottom: 20px;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.image_container img {
+		width: 100%;
+		object-fit: contain;
+	}
 
 	.menu_btn {
 		display: block;
@@ -450,5 +474,80 @@ footer {
 	/* filter page result */
 	.products_result_header {
 		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.products_result_header {
+		grid-template-columns: 100%;
+	}
+
+	.item_double {
+		grid-template-columns: 1fr;
+	}
+
+	.card_image_left {
+		padding: 10px;
+		align-items: center;
+	}
+
+	.items_slider.slick-slider {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.row_container {
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+
+	.items_slider button.slick-arrow {
+		top: 5px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.category_card {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.categories_card_container .category_card:nth-child(2),
+	.categories_card_container .category_card:first-child {
+		min-height: 250px;
+		padding: 20px 8px;
+	}
+
+	.item_review {
+		margin: 0 5px;
+	}
+
+	.inpisrate_image {
+		min-height: 200px;
+	}
+
+	.inpirate_detail {
+		padding: 15px 10px;
+	}
+
+	.profile_item {
+		margin-right: 10px;
+		padding-right: 15px;
+	}
+
+	footer .row_container img:first-child {
+		max-height: 250px;
+	}
+
+	.product_picture .image_container {
+		max-height: 200px;
+	}
+
+	.popup_image {
+		gap: 10px;
+	}
+
+	.popup_image a {
+		border-radius: 10px;
 	}
 }

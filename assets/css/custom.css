@@ -1500,7 +1500,8 @@ button.remove_all_active_filter {
     padding: 4px 10px;
     border-radius: 4px;
     display: flex !important;
-    max-width: max-content;
+    width: 210px !important;
+    margin-right: 10px;
 }
 
 .item_slider img {
@@ -2078,6 +2079,112 @@ a.details_link {
 
 .slider_product_container hr {
     margin: 20px 0;
+}
+
+.sub_menu_container {
+    display: none;
+    position: absolute;
+    width: 100%;
+    min-width: 100%;
+    background-color: white;
+    left: 0;
+    padding: 40px 0 60px;
+    margin-top: 14px;
+}
+
+.main-menu:hover .sub_menu_container,
+.sub_menu_container.active {
+    display: inherit;
+}
+
+.main-menu:hover .main_menu_list::after {
+    display: block;
+}
+
+.main_menu_list {
+    position: relative;
+}
+
+.main_menu_list::after {
+    display: none;
+    background-color: white;
+    content: "a";
+    color: white;
+    left: calc(50% - 10px);
+    width: 20px;
+    clip-path: polygon(50% 0, 0 100%, 100% 100%);
+    position: absolute;
+}
+
+.pop_appointment {
+    background-color: rgba(0, 0, 0, 0.267);
+    min-height: 100vh;
+    position: absolute;
+    display: none;
+    align-items: center;
+    top: 0;
+    width: 100%;
+}
+
+.pop_appointment.active {
+    display: flex;
+}
+
+.appointment_header {
+    position: relative;
+}
+
+.appointment_header h2 {
+    font-size: var(--sm);
+}
+
+.appointment_header p {
+    color: var(--text-font);
+    margin: 15px 0;
+}
+
+.appointment_container {
+    background-color: white;
+    width: 80%;
+    max-width: 1045px;
+    margin: 0 auto;
+    padding: 40px 50px;
+}
+
+.appointment_container .close {
+    position: absolute;
+    right: 0;
+    top: -20px;
+}
+
+.appointment_container .close img {
+    width: 30px;
+    height: 30px;
+}
+
+.input_container {
+    display: grid;
+    grid-template-columns: repeat(2, 47%);
+    gap: 6%;
+}
+
+.input_card label {
+    font-weight: bold;
+    display: grid;
+}
+
+.input_card .radio_button label {
+    font-weight: normal;
+    display: inherit;
+}
+
+.input_container.full {
+    grid-template-columns: 100%;
+}
+
+.radio_button.collumn {
+    display: flex;
+    gap: 40px;
 }
 
 
