@@ -2,921 +2,865 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
-    <script src="./assets/js/jquery.min.js"></script>
-    <script src="./assets/js/script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-    <link rel="stylesheet" href="./assets/css/custom.css">
-    <link rel="stylesheet" href="./assets/css/responsive.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+  <script src="./assets/js/jquery.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <link rel="stylesheet" href="./assets/css/custom.css">
+  <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 
 <body>
-    <div class="backdrop"></div>
-    <header>
-        <div class="top_section bg_black">
-            <div class="row_container font_white flex">
-                <div class="google_star flex">
-                    <p>UITSTEKEND</p>
-                    <div class="image_star_container flex">
-                        <img src="./assets/images/star.png" alt="star icon">
-                        <img src="./assets/images/star.png" alt="star icon">
-                        <img src="./assets/images/star.png" alt="star icon">
-                        <img src="./assets/images/star.png" alt="star icon">
-                        <img src="./assets/images/star.png" alt="star icon">
-                    </div>
-                    <p>512 recensies op</p>
-                    <img src="./assets/images/google-lg.png" alt="google icon" height="20px">
-                </div>
-                <div class="item-check flex">
-                    <span class="rounded_green">
-                        <img src="./assets/images/check.svg" alt="check icon">
-                    </span>
-                    <p>Binnen 1 à 2 dagen geleverd</p>
-                </div>
-                <div class="item-check flex">
-                    <span class="rounded_green">
-                        <img src="./assets/images/check.svg" alt="check icon">
-                    </span>
-                    <p>Expert op tuiyngebied</p>
-                </div>
-                <div class="item-check flex">
-                    <span class="rounded_green">
-                        <img src="./assets/images/check.svg" alt="check icon">
-                    </span>
-                    <p>100% Tevredenheidgarantie</p>
-                </div>
-            </div>
+  <div class="backdrop"></div>
+  <header>
+    <div class="top_section bg_black">
+      <div class="row_container font_white flex">
+        <div class="google_star flex">
+          <p>UITSTEKEND</p>
+          <div class="image_star_container flex">
+            <img src="./assets/images/star.png" alt="star icon">
+            <img src="./assets/images/star.png" alt="star icon">
+            <img src="./assets/images/star.png" alt="star icon">
+            <img src="./assets/images/star.png" alt="star icon">
+            <img src="./assets/images/star.png" alt="star icon">
+          </div>
+          <p>512 recensies op</p>
+          <img src="./assets/images/google-lg.png" alt="google icon" height="20px">
         </div>
-        <div class="middle_section">
-            <div class="row_container flex row">
-                <div class="menu_btn">
-                    <button class="all_cat category_btn">
-                        <img src="./assets/images/menu-white.png" alt="menu icon" srcset="">
-                    </button>
-                </div>
-                <img src="./assets/images/black-logo.jpg" alt="site logo" class="site_logo" width="250px">
-                <form action="" class="search_form">
-                    <div class="with_border">
-                        <img src="./assets/images/search.svg" alt="search" width="20px">
-                        <input type="text" placeholder="Waar bent u naar opzoek?">
-                    </div>
-                    <button type="submit" class="bg_green font_white">Zoeken</button>
-                </form>
-                <div class="profile_container flex row">
-                    <div class="profile_item flex row">
-                        <div class="icon_container">
-                            <img src="./assets/images/headset.png" alt="customer services">
-                        </div>
-                        <div class="flex flex-col row">
-                            <p><strong>Klantenservice</strong></p>
-                            <p><a href="tel:0800-1234">0800-1234</a></p>
-                        </div>
-                    </div>
-                    <div class="profile_item flex row with_chart">
-                        <div class="icon_container">
-                            <img src="./assets/images/lock.png" alt="customer services">
-                            <strong><span class="rounded_green font_white">2</span></strong>
-                        </div>
-                        <div class="flex flex-col row">
-                            <p><strong>Winkelwagen</strong></p>
-                            <p>€12,64</p>
-                        </div>
-                    </div>
-                    <div class="profile_item flex row">
-                        <div class="icon_container">
-                            <img src="./assets/images/person.png" alt="customer services">
-                        </div>
-                        <div class="flex flex-col row">
-                            <p><strong>Mijn Account</strong></p>
-                            <p>Inloggen</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="item-check flex">
+          <span class="rounded_green">
+            <img src="./assets/images/check.svg" alt="check icon">
+          </span>
+          <p>Binnen 1 à 2 dagen geleverd</p>
         </div>
-        <div class="bottom_section bg_gray">
-            <div class="row_container flex categories_menu_container">
+        <div class="item-check flex">
+          <span class="rounded_green">
+            <img src="./assets/images/check.svg" alt="check icon">
+          </span>
+          <p>Expert op tuiyngebied</p>
+        </div>
+        <div class="item-check flex">
+          <span class="rounded_green">
+            <img src="./assets/images/check.svg" alt="check icon">
+          </span>
+          <p>100% Tevredenheidgarantie</p>
+        </div>
+      </div>
+    </div>
+    <div class="middle_section">
+      <div class="row_container flex row">
+        <div class="menu_btn">
+          <button class="all_cat category_btn">
+            <img src="./assets/images/menu-white.png" alt="menu icon" srcset="">
+          </button>
+        </div>
+        <img src="./assets/images/black-logo.jpg" alt="site logo" class="site_logo" width="250px">
+        <form action="" class="search_form">
+          <div class="with_border">
+            <img src="./assets/images/search.svg" alt="search" width="20px">
+            <input type="text" placeholder="Waar bent u naar opzoek?">
+          </div>
+          <button type="submit" class="bg_green font_white">Zoeken</button>
+        </form>
+        <div class="profile_container flex row">
+          <div class="profile_item flex row">
+            <div class="icon_container">
+              <img src="./assets/images/headset.png" alt="customer services">
+            </div>
+            <div class="flex flex-col row">
+              <p><strong>Klantenservice</strong></p>
+              <p><a href="tel:0800-1234">0800-1234</a></p>
+            </div>
+          </div>
+          <div class="profile_item flex row with_chart">
+            <div class="icon_container">
+              <img src="./assets/images/lock.png" alt="customer services">
+              <strong><span class="rounded_green font_white">2</span></strong>
+            </div>
+            <div class="flex flex-col row">
+              <p><strong>Winkelwagen</strong></p>
+              <p>€12,64</p>
+            </div>
+          </div>
+          <div class="profile_item flex row">
+            <div class="icon_container">
+              <img src="./assets/images/person.png" alt="customer services">
+            </div>
+            <div class="flex flex-col row">
+              <p><strong>Mijn Account</strong></p>
+              <p>Inloggen</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom_section bg_gray">
+      <div class="row_container flex categories_menu_container">
+        <ul>
+          <li><a class="all_cat category_btn"> <img src="./assets/images/menu-white.png" alt="menu icon" srcset=""> Alle categorieen</a></li>
+          <li class="main-menu">
+            <a href="#" class="main_menu_list">Blokhutten</a>
+            <div class="sub_menu_container">
+              <div class="sub_menu row_container">
                 <ul>
-                    <li><a class="all_cat category_btn"> <img src="./assets/images/menu-white.png" alt="menu icon"
-                                srcset=""> Alle categorieen</a></li>
-                    <li class="main-menu">
-                        <a href="#" class="main_menu_list">Blokhutten</a>
-                        <div class="sub_menu_container">
-                            <div class="sub_menu row_container">
-                                <ul>
-                                    <li>Blokhutten</li>
-                                    <li><a href="#">Blokhutten</a></li>
-                                    <li><a href="#">Blokhutten</a></li>
-                                    <li><a href="#">Blokhutten</a></li>
-                                    <li><a href="#">Blokhutten</a></li>
-                                </ul>
-                                <ul>
-                                    <li>Blokhutten</li>
-                                    <li><a href="#">Blokhutten</a></li>
-                                    <li><a href="#">Blokhutten</a></li>
-                                    <li><a href="#">Blokhutten</a></li>
-                                    <li><a href="#">Blokhutten</a></li>
-                                </ul>
-                                <ul>
-                                    <li>Blokhutten</li>
-                                    <li><a href="#">Blokhutten</a></li>
-                                    <li><a href="#">Blokhutten</a></li>
-                                    <li><a href="#">Blokhutten</a></li>
-                                    <li><a href="#">Blokhutten</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="main-menu">
-                        <a href="#" class="main_menu_list">Sauna’s</a>
-                        <div class="sub_menu_container">
-                            <div class="sub_menu row_container">
-                                <ul>
-                                    <li>Sauna’s</li>
-                                    <li><a href="#">Blokhutten</a></li>
-                                    <li><a href="#">Blokhutten</a></li>
-                                    <li><a href="#">Blokhutten</a></li>
-                                    <li><a href="#">Blokhutten</a></li>
-                                </ul>
-                                <ul>
-                                    <li>Blokhutten</li>
-                                    <li><a href="#">Blokhutten</a></li>
-                                    <li><a href="#">Blokhutten</a></li>
-                                    <li><a href="#">Blokhutten</a></li>
-                                    <li><a href="#">Blokhutten</a></li>
-                                </ul>
-                                <ul>
-                                    <li>Blokhutten</li>
-                                    <li><a href="#">Blokhutten</a></li>
-                                    <li><a href="#">Blokhutten</a></li>
-                                    <li><a href="#">Blokhutten</a></li>
-                                    <li><a href="#">Blokhutten</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="main-menu">
-                        <a href="#" class="main_menu_list">Tuinkasten</a>
-                        <div class="sub_menu_container">
-                            <div class="sub_menu row_container">
-                                <ul>
-                                    <li>Tuinkasten</li>
-                                    <li><a href="#">Blokhutten</a></li>
-                                    <li><a href="#">Blokhutten</a></li>
-                                    <li><a href="#">Blokhutten</a></li>
-                                    <li><a href="#">Blokhutten</a></li>
-                                </ul>
-                                <ul>
-                                    <li>Blokhutten</li>
-                                    <li><a href="#">Blokhutten</a></li>
-                                    <li><a href="#">Blokhutten</a></li>
-                                    <li><a href="#">Blokhutten</a></li>
-                                    <li><a href="#">Blokhutten</a></li>
-                                </ul>
-                                <ul>
-                                    <li>Blokhutten</li>
-                                    <li><a href="#">Blokhutten</a></li>
-                                    <li><a href="#">Blokhutten</a></li>
-                                    <li><a href="#">Blokhutten</a></li>
-                                    <li><a href="#">Blokhutten</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="main-menu">
-                        <a href="#" class="main_menu_list">Jacuzzi’s</a>
-                        <div class="sub_menu_container">
-                            <div class="sub_menu row_container">
-                                <ul>
-                                    <li>Jacuzzi’s</li>
-                                    <li><a href="#">Blokhutten</a></li>
-                                    <li><a href="#">Blokhutten</a></li>
-                                    <li><a href="#">Blokhutten</a></li>
-                                    <li><a href="#">Blokhutten</a></li>
-                                </ul>
-                                <ul>
-                                    <li>Blokhutten</li>
-                                    <li><a href="#">Blokhutten</a></li>
-                                    <li><a href="#">Blokhutten</a></li>
-                                    <li><a href="#">Blokhutten</a></li>
-                                    <li><a href="#">Blokhutten</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="main-menu"><a href="#" class="main_menu_list">Parasols</a></li>
-                    <li class="main-menu"><a href="#" class="main_menu_list">Categorie6</a></li>
-                    <li class="main-menu"><a href="#" class="main_menu_list">Categorie7</a></li>
-                    <li class="main-menu"><a href="#" class="main_menu_list">Categorie8</a></li>
+                  <li>Blokhutten</li>
+                  <li><a href="#">Blokhutten</a></li>
+                  <li><a href="#">Blokhutten</a></li>
+                  <li><a href="#">Blokhutten</a></li>
+                  <li><a href="#">Blokhutten</a></li>
                 </ul>
-            </div>
-        </div>
-        <section class="slider_categories">
-            <div id="wrap_slider">
-                <div class="popup_header flex space_between">
-                    <h2>Kies een categorie</h2>
-                    <button class="close-call"><img src="./assets/images/close.svg" alt="close button"></button>
-                </div>
                 <ul>
-                    <li>
-                        <a href="#">Sauna’s</a>
-                        <div class="arrow_btn">
-                            <button><img src="./assets/images/arrow-gray.svg" alt="next menu"></button>
-                        </div>
-                        <!-- the sub menu -->
-                        <div class="sub-menu">
-                            <div class="popup_header flex space_between">
-                                <h2>Sauna’s</h2>
-                                <button class="close-call"><img src="./assets/images/close.svg" alt="close button"
-                                        height="20px"></button>
-                            </div>
-                            <div class="back_to_main_category">
-                                <a class="close_sub_menu">
-                                    <img src="./assets/images/prev_green.svg" alt="back icon">
-                                    <p>Back to main category</p>
-                                </a>
-                            </div>
-                            <hr class="divider_with_space">
-                            <ul class="sub_menu_item_list">
-                                <li>
-                                    <a href="#">
-                                        <p>aaaa</p>
-                                        <img src="./assets/images/arrow-gray.svg" alt="next menu">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <p>aaaa</p>
-                                        <img src="./assets/images/arrow-gray.svg" alt="next menu">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <p>aaaa</p>
-                                        <img src="./assets/images/arrow-gray.svg" alt="next menu">
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#">Tuinkasten</a>
-                        <div class="arrow_btn"><button><img src="./assets/images/arrow-gray.svg"
-                                    alt="next menu"></button></div>
-                    </li>
-                    <li>
-                        <a href="#">Tuinkasten</a>
-                        <div class="arrow_btn"><button><img src="./assets/images/arrow-gray.svg"
-                                    alt="next menu"></button></div>
-                    </li>
-                    <li>
-                        <a href="#">Tuinkasten</a>
-                        <div class="arrow_btn"><button><img src="./assets/images/arrow-gray.svg"
-                                    alt="next menu"></button></div>
-                    </li>
+                  <li>Blokhutten</li>
+                  <li><a href="#">Blokhutten</a></li>
+                  <li><a href="#">Blokhutten</a></li>
+                  <li><a href="#">Blokhutten</a></li>
+                  <li><a href="#">Blokhutten</a></li>
                 </ul>
+                <ul>
+                  <li>Blokhutten</li>
+                  <li><a href="#">Blokhutten</a></li>
+                  <li><a href="#">Blokhutten</a></li>
+                  <li><a href="#">Blokhutten</a></li>
+                  <li><a href="#">Blokhutten</a></li>
+                </ul>
+              </div>
             </div>
-        </section>
-    </header>
-    <main>
-        <section class="hero"
-            style="background-image: url(./assets/images/yard.jpg); background-size: cover; background-position: center;">
-            <div class="row_container">
-                <div class="content_hero">
-                    <h1>Dé webwinkel voor al uw tuiynbenodigheden!</h1>
-                    <p>Voor schuttingen, bamboe, tuiynsets en meer!</p>
-                    <a href="#" class="green_btn with_arrow open_appointment">ONS ASSORTIMENT</a>
-                </div>
+          </li>
+          <li class="main-menu">
+            <a href="#" class="main_menu_list">Sauna’s</a>
+            <div class="sub_menu_container">
+              <div class="sub_menu row_container">
+                <ul>
+                  <li>Sauna’s</li>
+                  <li><a href="#">Blokhutten</a></li>
+                  <li><a href="#">Blokhutten</a></li>
+                  <li><a href="#">Blokhutten</a></li>
+                  <li><a href="#">Blokhutten</a></li>
+                </ul>
+                <ul>
+                  <li>Blokhutten</li>
+                  <li><a href="#">Blokhutten</a></li>
+                  <li><a href="#">Blokhutten</a></li>
+                  <li><a href="#">Blokhutten</a></li>
+                  <li><a href="#">Blokhutten</a></li>
+                </ul>
+                <ul>
+                  <li>Blokhutten</li>
+                  <li><a href="#">Blokhutten</a></li>
+                  <li><a href="#">Blokhutten</a></li>
+                  <li><a href="#">Blokhutten</a></li>
+                  <li><a href="#">Blokhutten</a></li>
+                </ul>
+              </div>
             </div>
-            <div class="pop_appointment">
-                <div class="appointment_container">
-                    <div class="appointment_header">
-                        <button class="close"><img src="./assets/images/close.svg" alt="close pop up"></button>
-                        <h2>Afspraak maken</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident laboriosam fuga dolorum
-                            sint dolorem ducimus, soluta assumenda, beatae quasi, modi inventore animi non. Praesentium
-                            dolores rem illo dignissimos! Perferendis, beatae?</p>
-                    </div>
-                    <div class="form_container">
-                        <form action="" method="post">
-                            <div class="input_container">
-                                <div class="input_card">
-                                    <label for="naam">Naam*
-                                        <input type="text" name="naam" id="naam">
-                                    </label>
-                                </div>
-                                <div class="input_card">
-                                    <label for="naam">Naam*
-                                        <input type="text" name="naam" id="naam">
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="input_container">
-                                <div class="input_card">
-                                    <label for="naam">Telefoonnummer*
-                                        <input type="number" name="naam" id="naam">
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="input_container">
-                                <div class="input_card">
-                                    <label for="locatie">Locatie*</label>
-                                    <div class="collumn radio_button">
-                                        <label>
-                                            <input type="radio" name="locatie" id="locatie">
-                                            <span>Breda</span>
-                                        </label>
-                                        <label>
-                                            <input type="radio" name="breda" id="breda">
-                                            <span>Breda</span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="input_container">
-                                <div class="input_card">
-                                    <label for="Datum">Datum*
-                                        <input type="date" name="Datum" id="Datum">
-                                    </label>
-                                </div>
-                                <div class="input_card">
-                                    <label for="locatie">Dagdeel*</label>
-                                    <div class="row radio_button">
-                                        <label>
-                                            <input type="radio" name="locatie" id="locatie">
-                                            <span>Breda</span>
-                                        </label>
-                                        <label>
-                                            <input type="radio" name="breda" id="breda">
-                                            <span>Breda</span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="input_container full">
-                                <div class="input_card">
-                                    <label for="text">textarea*
-                                        <textarea name="text" id="text"></textarea>
-                                    </label>
-                                </div>
-                            </div>
-                            <button type="submit" class="green_btn">Afspraak maken</button>
-                        </form>
-                    </div>
-                </div>
+          </li>
+          <li class="main-menu">
+            <a href="#" class="main_menu_list">Tuinkasten</a>
+            <div class="sub_menu_container">
+              <div class="sub_menu row_container">
+                <ul>
+                  <li>Tuinkasten</li>
+                  <li><a href="#">Blokhutten</a></li>
+                  <li><a href="#">Blokhutten</a></li>
+                  <li><a href="#">Blokhutten</a></li>
+                  <li><a href="#">Blokhutten</a></li>
+                </ul>
+                <ul>
+                  <li>Blokhutten</li>
+                  <li><a href="#">Blokhutten</a></li>
+                  <li><a href="#">Blokhutten</a></li>
+                  <li><a href="#">Blokhutten</a></li>
+                  <li><a href="#">Blokhutten</a></li>
+                </ul>
+                <ul>
+                  <li>Blokhutten</li>
+                  <li><a href="#">Blokhutten</a></li>
+                  <li><a href="#">Blokhutten</a></li>
+                  <li><a href="#">Blokhutten</a></li>
+                  <li><a href="#">Blokhutten</a></li>
+                </ul>
+              </div>
             </div>
-        </section>
-        <section class="supersale bg_gray">
-            <div class="row_container">
-                <div class="item_sale flex">
-                    <img src="./assets/images/delivery.png" alt="delivery icon">
-                    <div class="item_text">
-                        <p>Supersnelle levering</p>
-                        <p>Geniet al van uw producten binnen 2 dagen na bestellen!</p>
-                    </div>
-                </div>
-                <div class="item_sale flex">
-                    <img src="./assets/images/24hrs.png" alt="refund icon">
-                    <div class="item_text">
-                        <p>Niet goed geld terug</p>
-                        <p>Toch niet helemaal tevreden met uw bestelling? Geen probleem!</p>
-                    </div>
-                </div>
-                <div class="item_sale flex">
-                    <img src="./assets/images/piggy.png" alt="piggy icon">
-                    <div class="item_text">
-                        <p>Altijd de beste prijs</p>
-                        <p>Wij houden onze concurrenten goed in de gaten en updaten onze prijzen waar nodig!</p>
-                    </div>
-                </div>
+          </li>
+          <li class="main-menu">
+            <a href="#" class="main_menu_list">Jacuzzi’s</a>
+            <div class="sub_menu_container">
+              <div class="sub_menu row_container">
+                <ul>
+                  <li>Jacuzzi’s</li>
+                  <li><a href="#">Blokhutten</a></li>
+                  <li><a href="#">Blokhutten</a></li>
+                  <li><a href="#">Blokhutten</a></li>
+                  <li><a href="#">Blokhutten</a></li>
+                </ul>
+                <ul>
+                  <li>Blokhutten</li>
+                  <li><a href="#">Blokhutten</a></li>
+                  <li><a href="#">Blokhutten</a></li>
+                  <li><a href="#">Blokhutten</a></li>
+                  <li><a href="#">Blokhutten</a></li>
+                </ul>
+              </div>
             </div>
-        </section>
-        <section class="categories_card_container">
-            <div class="row_container">
-                <div class="heading_container flex">
-                    <h2>UITGELICHTE CATEGORIËN</h2>
-                    <a href="#">Alle categorieën >></a>
-                </div>
-                <div class="categories_container">
-                    <div class="category_card flex"
-                        style="background-image: url(./assets/images/jac.jpg); background-position: center; background-size: cover;">
-                        <h3>JACUZZI’S</h3>
-                        <p>Heerlijk bubbelen in je eigen achtertuin</p>
-                        <a href="#" class="green_btn with_arrow">JACUZZI’S</a>
-                    </div>
-                    <div class="category_card flex"
-                        style="background-image: url(./assets/images/jac.jpg); background-position: center; background-size: cover;">
-                        <h3>JACUZZI’S</h3>
-                        <p>Heerlijk bubbelen in je eigen achtertuin</p>
-                        <a href="#" class="green_btn with_arrow">JACUZZI’S</a>
-                    </div>
-                    <div class="category_card flex"
-                        style="background-image: url(./assets/images/jac.jpg); background-position: center; background-size: cover;">
-                        <h3>JACUZZI’S</h3>
-                        <p>Heerlijk bubbelen in je eigen achtertuin</p>
-                        <a href="#" class="green_btn with_arrow">JACUZZI’S</a>
-                    </div>
-                    <div class="category_card flex"
-                        style="background-image: url(./assets/images/jac.jpg); background-position: center; background-size: cover;">
-                        <h3>JACUZZI’S</h3>
-                        <p>Heerlijk bubbelen in je eigen achtertuin</p>
-                        <a href="#" class="green_btn with_arrow">JACUZZI’S</a>
-                    </div>
-                    <div class="category_card flex"
-                        style="background-image: url(./assets/images/jac.jpg); background-position: center; background-size: cover;">
-                        <h3>JACUZZI’S</h3>
-                        <p>Heerlijk bubbelen in je eigen achtertuin</p>
-                        <a href="#" class="green_btn with_arrow">JACUZZI’S</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="deals_container bg_gray">
-            <div class="row_container">
-                <div class="heading_main_container">
-                    <div class="heading_container flex">
-                        <h2>GOEIE DEALS</h2>
-                        <a href="#">Meer deals >></a>
-                    </div>
-                    <div class="description_heading">
-                        <p>Deze items zijn het vaakst verkocht in de afgelopen 7 dagen</p>
-                    </div>
-                </div>
-                <div class="deals_content flex">
-                    <div class="left_side flex">
-                        <div class="item_deal">
-                            <div class="image_item"
-                                style="background-image: url('./assets/images/yard.jpg'); background-size: contain; height: 150px; background-repeat: no-repeat; background-position: bottom center;">
-                            </div>
-                            <h3>SAUNA OBELIX 5 Persoons</h3>
-                            <p>Vanaf €2500</p>
-                            <a href="#">Meer informatie >></a>
-                        </div>
-                        <div class="item_deal">
-                            <div class="image_item"
-                                style="background-image: url('./assets/images/yard.jpg'); background-size: contain; height: 150px; background-repeat: no-repeat; background-position: bottom center;">
-                            </div>
-                            <h3>SAUNA OBELIX 5 Persoons</h3>
-                            <p>Vanaf €2500</p>
-                            <a href="#">Meer informatie >></a>
-                        </div>
-                        <div class="item_deal">
-                            <div class="image_item"
-                                style="background-image: url('./assets/images/yard.jpg'); background-size: contain; height: 150px; background-repeat: no-repeat; background-position: bottom center;">
-                            </div>
-                            <h3>SAUNA OBELIX 5 Persoons</h3>
-                            <p>Vanaf €2500</p>
-                            <a href="#">Meer informatie >></a>
-                        </div>
-                    </div>
-                    <div class="right_side flex">
-                        <div class="main_sale">
-                            <div class="sale_image">
-                                <img src="./assets/images/yard.jpg" alt="the alt">
-                            </div>
-                            <h3>SALE</h3>
-                            <p>Tot wel 30% korting!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="rates_container">
-            <div class="row_container">
-                <div class="heading_container">
-                    <div class="space_between rates_heading flex">
-                        <div class="google_star font_medium flex">
-                            <p>UITSTEKEND</p>
-                            <div class="image_star_container flex">
-                                <img src="./assets/images/star.png" alt="star icon">
-                                <img src="./assets/images/star.png" alt="star icon">
-                                <img src="./assets/images/star.png" alt="star icon">
-                                <img src="./assets/images/star.png" alt="star icon">
-                                <img src="./assets/images/star.png" alt="star icon">
-                            </div>
-                            <p>512 recensies op</p>
-                            <img src="./assets/images/google-lg.png" alt="google icon" height="20px">
-                        </div>
-                        <h2>WAT ANDEREN OVER ONS ZEGGEN</h2>
-                    </div>
-                </div>
-                <div class="slider_reviews ">
-                    <div class="item_review">
-                        <div class="item_box_review">
-                            <div class="item_heading_review flex space_between">
-                                <div class="image_star_container flex">
-                                    <img src="./assets/images/star.png" alt="star icon">
-                                    <img src="./assets/images/star.png" alt="star icon">
-                                    <img src="./assets/images/star.png" alt="star icon">
-                                    <img src="./assets/images/star.png" alt="star icon">
-                                    <img src="./assets/images/star.png" alt="star icon">
-                                </div>
-                                <img src="./assets/images/google.svg" alt="google icon" height="20px">
-                            </div>
-                            <div class="item_content_review">
-                                <p>Precies gevonden wat ik zocht, en tevens heeft het product al mijn verwachtingen
-                                    overtroffen! Tuiyn heeft me fantastisch geholpen bij het maken van de juiste keuze
-                                    voor mijn zweef parasol! </p>
-                            </div>
-                        </div>
-                        <div class="the_reviewer_box flex">
-                            <img src="./assets/images/reviewer.jpg" alt="people name">
-                            <div class="the_reviewer_identity">
-                                <h4>Julian Ros</h4>
-                                <p>30 februari 2024</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item_review">
-                        <div class="item_box_review">
-                            <div class="item_heading_review flex space_between">
-                                <div class="image_star_container flex">
-                                    <img src="./assets/images/star.png" alt="star icon">
-                                    <img src="./assets/images/star.png" alt="star icon">
-                                    <img src="./assets/images/star.png" alt="star icon">
-                                    <img src="./assets/images/star.png" alt="star icon">
-                                    <img src="./assets/images/star.png" alt="star icon">
-                                </div>
-                                <img src="./assets/images/google.svg" alt="google icon" height="20px">
-                            </div>
-                            <div class="item_content_review">
-                                <p>Precies gevonden wat ik zocht, en tevens heeft het product al mijn verwachtingen
-                                    overtroffen! Tuiyn heeft me fantastisch geholpen bij het maken van de juiste keuze
-                                    voor mijn zweef parasol! </p>
-                            </div>
-                        </div>
-                        <div class="the_reviewer_box flex">
-                            <img src="./assets/images/reviewer.jpg" alt="people name">
-                            <div class="the_reviewer_identity">
-                                <h4>Julian Ros</h4>
-                                <p>30 februari 2024</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item_review">
-                        <div class="item_box_review">
-                            <div class="item_heading_review flex space_between">
-                                <div class="image_star_container flex">
-                                    <img src="./assets/images/star.png" alt="star icon">
-                                    <img src="./assets/images/star.png" alt="star icon">
-                                    <img src="./assets/images/star.png" alt="star icon">
-                                    <img src="./assets/images/star.png" alt="star icon">
-                                    <img src="./assets/images/star.png" alt="star icon">
-                                </div>
-                                <img src="./assets/images/google.svg" alt="google icon" height="20px">
-                            </div>
-                            <div class="item_content_review">
-                                <p>Precies gevonden wat ik zocht, en tevens heeft het product al mijn verwachtingen
-                                    overtroffen! Tuiyn heeft me fantastisch geholpen bij het maken van de juiste keuze
-                                    voor mijn zweef parasol! </p>
-                            </div>
-                        </div>
-                        <div class="the_reviewer_box flex">
-                            <img src="./assets/images/reviewer.jpg" alt="people name">
-                            <div class="the_reviewer_identity">
-                                <h4>Julian Ros</h4>
-                                <p>30 februari 2024</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item_review">
-                        <div class="item_box_review">
-                            <div class="item_heading_review flex space_between">
-                                <div class="image_star_container flex">
-                                    <img src="./assets/images/star.png" alt="star icon">
-                                    <img src="./assets/images/star.png" alt="star icon">
-                                    <img src="./assets/images/star.png" alt="star icon">
-                                    <img src="./assets/images/star.png" alt="star icon">
-                                    <img src="./assets/images/star.png" alt="star icon">
-                                </div>
-                                <img src="./assets/images/google.svg" alt="google icon" height="20px">
-                            </div>
-                            <div class="item_content_review">
-                                <p>Precies gevonden wat ik zocht, en tevens heeft het product al mijn verwachtingen
-                                    overtroffen! Tuiyn heeft me fantastisch geholpen bij het maken van de juiste keuze
-                                    voor mijn zweef parasol! </p>
-                            </div>
-                        </div>
-                        <div class="the_reviewer_box flex">
-                            <img src="./assets/images/reviewer.jpg" alt="people name">
-                            <div class="the_reviewer_identity">
-                                <h4>Julian Ros</h4>
-                                <p>30 februari 2024</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="inspiratie_container bg_dark_green ">
-            <div class="row_container">
-                <div class="heading_main_container font_white">
-                    <div class="heading_container flex">
-                        <h2>INSPIRATIE NODIG?</h2>
-                        <a href="#">Alle artikelen >></a>
-                    </div>
-                    <div class="description_heading">
-                        <p>Wij zoeken continu uit wat de laatste trends en populaire ontwikkelingen zijn binnen onze
-                            branche. Hieronder zie je meerdere artikelen, tips en tricks om uw achtertuin het beste tot
-                            z’n recht te laten komen!</p>
-                    </div>
-                </div>
-                <div class="inspirate_cards">
-                    <div class="inspirate_item">
-                        <div class="inpisrate_image"
-                            style="background-image: url(./assets/images/jac.jpg); background-position: center; background-size: cover;">
-                        </div>
-                        <div class="inpirate_detail">
-                            <h4>DE 10 BESTE ZWEEFPARASOLS VAN HET MOMENT!</h4>
-                            <p>Lorem ipsum dolor sit amet. Eum obcaecati consequuntur rem quidem incidunt ut temporibus
-                                recusandae non</p>
-                            <a href="#" class="green_btn with_arrow">VERDER LEZEN</a>
-                        </div>
-                    </div>
-                    <div class="inspirate_item">
-                        <div class="inpisrate_image"
-                            style="background-image: url(./assets/images/jac.jpg); background-position: center; background-size: cover;">
-                        </div>
-                        <div class="inpirate_detail">
-                            <h4>DE 10 BESTE ZWEEFPARASOLS VAN HET MOMENT!</h4>
-                            <p>Lorem ipsum dolor sit amet. Eum obcaecati consequuntur rem quidem incidunt ut temporibus
-                                recusandae non</p>
-                            <a href="#" class="green_btn with_arrow">VERDER LEZEN</a>
-                        </div>
-                    </div>
-                    <div class="inspirate_item">
-                        <div class="inpisrate_image"
-                            style="background-image: url(./assets/images/jac.jpg); background-position: center; background-size: cover;">
-                        </div>
-                        <div class="inpirate_detail">
-                            <h4>DE 10 BESTE ZWEEFPARASOLS VAN HET MOMENT!</h4>
-                            <p>Lorem ipsum dolor sit amet. Eum obcaecati consequuntur rem quidem incidunt ut temporibus
-                                recusandae non</p>
-                            <a href="#" class="green_btn with_arrow">VERDER LEZEN</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="about_container">
-            <div class="row_container">
-                <div class="about_content">
-                    <div class="left_side">
-                        <h2>OVER ONZE TUINPRODUCTEN</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.
-                            Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis
-                            sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.
-                            Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per
-                            conubia nostra, per inceptos himenaeos.</p>
-                        <p> Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor.
-                            Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis
-                            tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel,
-                            suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum.
-                            Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh.</p>
-                        <h3>JACUZZI’S VOOR IN DE TUIN</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.
-                            Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis
-                            sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.
-                            Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per
-                            conubia nostra, per inceptos himenaeos. </p>
-                    </div>
-                    <div class="right_side">
-                        <h3>GOED HOUT, BETERE PRIJZEN</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.
-                            Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis
-                            sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.
-                            Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per
-                            conubia nostra, per inceptos himenaeos.</p>
-                        <h3>LEKKER BUBBELEN IN JOUW EIGEN ACHTERTUIN</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.
-                            Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis
-                            sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.
-                            Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per
-                            conubia nostra, per inceptos himenaeos.</p>
-                        <p> Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor.
-                            Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis
-                            tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel,
-                            suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum.
-                            Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="contact_section">
-            <div class="row_container font_white flex space_between">
-                <img src="./assets/images/people-pointing.png" alt="people pointing" height="300px">
-                <div class="contact_cards">
-                    <div class="contact_item">
-                        <img src="./assets/images/call-white.png" alt="call icon">
-                        <h4>Bel ons op 0800-1234</h4>
-                        <p>Bereikbaar van 08:00 - 17:00</p>
-                    </div>
-                    <div class="contact_item">
-                        <img src="./assets/images/chat.png" alt="chat icon">
-                        <h4>Chat met ons!</h4>
-                        <p>Bereikbaar van 08:00 - 17:00</p>
-                    </div>
-                    <div class="contact_item">
-                        <img src="./assets/images/whatsaap.png" alt="whatsaap icon">
-                        <h4>WhatsApp</h4>
-                        <p> Op werkdagen gelijk antwoord! </p>
-                    </div>
-                    <div class="contact_item">
-                        <img src="./assets/images/email.png" alt="email icon">
-                        <h4>Stuur ons een email!</h4>
-                        <p> Op werkdagen gelijk antwoord!</p>
-                    </div>
-                </div>
-            </div>
+          </li>
+          <li class="main-menu"><a href="#" class="main_menu_list">Parasols</a></li>
+          <li class="main-menu"><a href="#" class="main_menu_list">Categorie6</a></li>
+          <li class="main-menu"><a href="#" class="main_menu_list">Categorie7</a></li>
+          <li class="main-menu"><a href="#" class="main_menu_list">Categorie8</a></li>
+        </ul>
+      </div>
+    </div>
+    <section class="slider_categories">
+      <div id="wrap_slider">
+        <div class="popup_header flex space_between">
+          <h2>Kies een categorie</h2>
+          <button class="close-call"><img src="./assets/images/close.svg" alt="close button"></button>
         </div>
-        <div class="menu_footer_section bg_dark_green">
-            <div class="row_container">
-                <div class="menu_item_cards">
-                    <div class="menu_item_footer">
-                        <img src="./assets/images/white-logo.jpg" alt="logo white" class="logo">
-                        <div class="social_media">
-                            <a href="#"><img src="./assets/images/ig.svg" alt="ig icon"></a>
-                            <a href="#"><img src="./assets/images/fb.svg" alt="fb icon"></a>
-                            <a href="#"><img src="./assets/images/linkedin.svg" alt="linkedin icon"></a>
-                        </div>
-                        <div class="location_items">
-                            <div class="location_item">
-                                <img src="./assets/images/location.svg" alt="location icon">
-                                <a href="#">Straatnaam 123 1234 AB, Amsterdam</a>
-                            </div>
-                            <div class="location_item">
-                                <img src="./assets/images/call-white.png" alt="call us">
-                                <a href="tel:+123456789">+123456789</a>
-                            </div>
-                            <div class="location_item">
-                                <img src="./assets/images/email.png" alt="mail us">
-                                <a href="mailto:Info@tuiyn.nl">Info@tuiyn.nl</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="menu_item_footer">
-                        <h3>Menu.</h3>
-                        <div class="divider"></div>
-                        <ul>
-                            <li><a href="#">Blokhutten</a></li>
-                            <li><a href="#">Sauna’s</a></li>
-                            <li><a href="#">Schuttingen</a></li>
-                            <li><a href="#">Veranda’s</a></li>
-                            <li><a href="#">Tuinkasten</a></li>
-                            <li><a href="#">Sale</a></li>
-                        </ul>
-                    </div>
-                    <div class="menu_item_footer">
-                        <h3>KLANTENSERVICE.</h3>
-                        <div class="divider"></div>
-                        <ul>
-                            <li><a href="#">Klantenservice</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Garantie</a></li>
-                            <li><a href="#">Bezorgen</a></li>
-                        </ul>
-                    </div>
-                    <div class="menu_item_footer">
-                        <h3>EXTRA MENU.</h3>
-                        <div class="divider"></div>
-                        <ul>
-                            <li><a href="#">Extra 1</a></li>
-                            <li><a href="#">Extra 1</a></li>
-                            <li><a href="#">Extra 1</a></li>
-                            <li><a href="#">Extra 1</a></li>
-                            <li><a href="#">Extra 1</a></li>
-                        </ul>
-                    </div>
-                    <div class="menu_item_footer">
-                        <h3>NIEUWSBRIEF.</h3>
-                        <div class="divider"></div>
-                        <p>Schrijf je in voor onze nieuwsbrief en profiteer gelijk van mooie kortingen en blijf op de
-                            hoogte van alle nieuwtjes rondom jouw favoriete tuiynspullen specialist!</p>
-                        <form action="#">
-                            <input type="email" placeholder="Uw e-mail adres...">
-                            <button type="submit">Verstuur!</button>
-                        </form>
-                    </div>
-                </div>
+        <ul>
+          <li>
+            <a href="#">Sauna’s</a>
+            <div class="arrow_btn">
+              <button><img src="./assets/images/arrow-gray.svg" alt="next menu"></button>
             </div>
+            <!-- the sub menu -->
+            <div class="sub-menu">
+              <div class="popup_header flex space_between">
+                <h2>Sauna’s</h2>
+                <button class="close-call"><img src="./assets/images/close.svg" alt="close button" height="20px"></button>
+              </div>
+              <div class="back_to_main_category">
+                <a class="close_sub_menu">
+                  <img src="./assets/images/prev_green.svg" alt="back icon">
+                  <p>Back to main category</p>
+                </a>
+              </div>
+              <hr class="divider_with_space">
+              <ul class="sub_menu_item_list">
+                <li>
+                  <a href="#">
+                    <p>aaaa</p>
+                    <img src="./assets/images/arrow-gray.svg" alt="next menu">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <p>aaaa</p>
+                    <img src="./assets/images/arrow-gray.svg" alt="next menu">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <p>aaaa</p>
+                    <img src="./assets/images/arrow-gray.svg" alt="next menu">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">Tuinkasten</a>
+            <div class="arrow_btn"><button><img src="./assets/images/arrow-gray.svg" alt="next menu"></button></div>
+          </li>
+          <li>
+            <a href="#">Tuinkasten</a>
+            <div class="arrow_btn"><button><img src="./assets/images/arrow-gray.svg" alt="next menu"></button></div>
+          </li>
+          <li>
+            <a href="#">Tuinkasten</a>
+            <div class="arrow_btn"><button><img src="./assets/images/arrow-gray.svg" alt="next menu"></button></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </header>
+  <main>
+    <section class="hero" style="background-image: url(./assets/images/yard.jpg); background-size: cover; background-position: center;">
+      <div class="row_container">
+        <div class="content_hero">
+          <h1>Dé webwinkel voor al uw tuiynbenodigheden!</h1>
+          <p>Voor schuttingen, bamboe, tuiynsets en meer!</p>
+          <a href="#" class="green_btn with_arrow open_appointment">ONS ASSORTIMENT</a>
         </div>
-        <div class="copyright_section bg_dark_green font_white">
-            <div class="row_container ">
-                <div class="copyright_content flex">
-                    <p>All rights reserved Tuiyn.nl 2024</p>
-                    <ul>
-                        <li><a href="#">Algemene voorwaarden</a></li>
-                        <li><a href="#"> Privacy Policy</a></li>
-                    </ul>
-                    <div class="payment_method">
-                        <img src="./assets/images/visa.png" alt="visa">
-                        <img src="./assets/images/visa.png" alt="visa">
-                        <img src="./assets/images/visa.png" alt="visa">
-                        <img src="./assets/images/visa.png" alt="visa">
-                    </div>
-                    <div class="social_media bg_white">
-                        <a href="#"><img src="./assets/images/ig.svg" alt="ig icon"></a>
-                        <a href="#"><img src="./assets/images/fb.svg" alt="fb icon"></a>
-                        <a href="#"><img src="./assets/images/linkedin.svg" alt="linkedin icon"></a>
-                    </div>
+      </div>
+      <div class="pop_appointment">
+        <div class="popup_appointment_overlay"></div>
+        <div class="appointment_container">
+          <div class="appointment_header">
+            <button class="close"><img src="./assets/images/close.svg" alt="close pop up"></button>
+            <h2>Afspraak maken</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident laboriosam fuga dolorum sint dolorem ducimus, soluta assumenda, beatae quasi, modi inventore animi non. Praesentium dolores rem illo dignissimos! Perferendis, beatae?</p>
+          </div>
+          <div class="form_container">
+            <form action="" method="post">
+              <div class="input_container">
+                <div class="input_card">
+                  <label for="naam">Naam*</label>
+                  <input type="text" name="naam" id="naam1">
                 </div>
-            </div>
+                <div class="input_card">
+                  <label for="naam2">Naam*</label>
+                  <input type="text" name="naam" id="naam2">
+                </div>
+              </div>
+              <div class="input_container">
+                <div class="input_card">
+                  <label for="naam3">Telefoonnummer*</label>
+                  <input type="number" name="naam" id="naam3">
+                </div>
+              </div>
+              <div class="input_container">
+                <div class="input_card">
+                  <label for="locatie">Locatie*</label>
+                  <div class="collumn radio_button">
+                    <div class="radio_input">
+                      <label for="locatie">
+                        <span>Locatie</span>
+                      </label>
+                      <input type="radio" name="locatie" id="locatie">
+                    </div>
+                    <div class="radio_input">
+                      <label for="breda">
+                        <span>Breda</span>
+                      </label>
+                      <input type="radio" name="breda" id="breda">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="input_container">
+                <div class="input_card">
+                  <label for="Datum">Datum*</label>
+                  <input type="date" name="Datum" id="Datum">
+                </div>
+                <div class="input_card">
+                  <label for="locatie">Dagdeel*</label>
+                  <div class="collumn radio_button">
+                    <div class="radio_input">
+                      <label for="locatie">
+                        <span>Locatie</span>
+                      </label>
+                      <input type="radio" name="locatie" id="locatie">
+                    </div>
+                    <div class="radio_input">
+                      <label for="breda">
+                        <span>Breda</span>
+                      </label>
+                      <input type="radio" name="breda" id="breda">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="input_container full">
+                <div class="input_card">
+                  <label for="textarea">textarea* </label>
+                  <textarea name="text" id="textarea"></textarea>
+                </div>
+              </div>
+              <button type="submit" class="green_btn">Afspraak maken</button>
+            </form>
+          </div>
         </div>
-        <section class="pop_up_cart" style="display: none;">
-            <div class="backdrop"></div>
-            <div id="wrap_popup">
-                <div class="content_popup">
-                    <div class="popup_header flex space_between">
-                        <h2>Winkelwagen</h2>
-                        <button class="close-call"><img src="./assets/images/close.svg" alt="close button"></button>
-                    </div>
-                    <hr>
-                    <div class="items_cart_popup">
-                        <div class="item_cart">
-                            <div class="item_image">
-                                <img src="./assets/images/small.jpeg" alt="item_image" width="100px">
-                            </div>
-                            <div class="item_product">
-                                <a href="#"> Keter Cortina 97 kunststof tuinhuis Antraciet </a>
-                                <select name="product_quantity" class="select2">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                </select>
-                            </div>
-                            <div class="item_price">
-                                <p>€ 2.149,-</p>
-                                <a class="remove_this_item" href="#"><img src="./assets/images/close.svg"
-                                        alt="close button"> Verwijderen</a>
-                            </div>
-                        </div>
-                        <div class="item_cart">
-                            <div class="item_image">
-                                <img src="./assets/images/small.jpeg" alt="item_image" width="100px">
-                            </div>
-                            <div class="item_product">
-                                <a href="#"> Keter Cortina 97 kunststof tuinhuis Antraciet </a>
-                                <select name="product_quantity" class="select2">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                </select>
-                            </div>
-                            <div class="item_price">
-                                <p>€ 2.149,-</p>
-                                <a class="remove_this_item" href="#"><img src="./assets/images/close.svg"
-                                        alt="close button"> Verwijderen</a>
-                            </div>
-                        </div>
-                        <div class="item_cart">
-                            <div class="item_image">
-                                <img src="./assets/images/small.jpeg" alt="item_image" width="100px">
-                            </div>
-                            <div class="item_product">
-                                <a href="#"> Keter Cortina 97 kunststof tuinhuis Antraciet </a>
-                                <select name="product_quantity" class="select2">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                </select>
-                            </div>
-                            <div class="item_price">
-                                <p>€ 2.149,-</p>
-                                <a class="remove_this_item" href="#"><img src="./assets/images/close.svg"
-                                        alt="close button"> Verwijderen</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="popup_footer">
-                        <hr>
-                        <div class="shipment flex space_between">
-                            <p>Verzendkosten</p>
-                            <p>GRATIS</p>
-                        </div>
-                        <div class="total flex space_between">
-                            <p>Totaal</p>
-                            <p>€ 2.149,-</p>
-                        </div>
-                        <hr>
-                        <a href="#" class="bg_green font_white afrekenen">Afrekenen</a>
-                        <a href="#" class="email_pop">Winkelwagen e-mailen</a>
-                    </div>
-                </div>
+      </div>
+    </section>
+    <section class="supersale bg_gray">
+      <div class="row_container">
+        <div class="item_sale flex">
+          <img src="./assets/images/delivery.png" alt="delivery icon">
+          <div class="item_text">
+            <p>Supersnelle levering</p>
+            <p>Geniet al van uw producten binnen 2 dagen na bestellen!</p>
+          </div>
+        </div>
+        <div class="item_sale flex">
+          <img src="./assets/images/24hrs.png" alt="refund icon">
+          <div class="item_text">
+            <p>Niet goed geld terug</p>
+            <p>Toch niet helemaal tevreden met uw bestelling? Geen probleem!</p>
+          </div>
+        </div>
+        <div class="item_sale flex">
+          <img src="./assets/images/piggy.png" alt="piggy icon">
+          <div class="item_text">
+            <p>Altijd de beste prijs</p>
+            <p>Wij houden onze concurrenten goed in de gaten en updaten onze prijzen waar nodig!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="categories_card_container">
+      <div class="row_container">
+        <div class="heading_container flex">
+          <h2>UITGELICHTE CATEGORIËN</h2>
+          <a href="#">Alle categorieën >></a>
+        </div>
+        <div class="categories_container">
+          <div class="category_card flex" style="background-image: url(./assets/images/jac.jpg); background-position: center; background-size: cover;">
+            <h3>JACUZZI’S</h3>
+            <p>Heerlijk bubbelen in je eigen achtertuin</p>
+            <a href="#" class="green_btn with_arrow">JACUZZI’S</a>
+          </div>
+          <div class="category_card flex" style="background-image: url(./assets/images/jac.jpg); background-position: center; background-size: cover;">
+            <h3>JACUZZI’S</h3>
+            <p>Heerlijk bubbelen in je eigen achtertuin</p>
+            <a href="#" class="green_btn with_arrow">JACUZZI’S</a>
+          </div>
+          <div class="category_card flex" style="background-image: url(./assets/images/jac.jpg); background-position: center; background-size: cover;">
+            <h3>JACUZZI’S</h3>
+            <p>Heerlijk bubbelen in je eigen achtertuin</p>
+            <a href="#" class="green_btn with_arrow">JACUZZI’S</a>
+          </div>
+          <div class="category_card flex" style="background-image: url(./assets/images/jac.jpg); background-position: center; background-size: cover;">
+            <h3>JACUZZI’S</h3>
+            <p>Heerlijk bubbelen in je eigen achtertuin</p>
+            <a href="#" class="green_btn with_arrow">JACUZZI’S</a>
+          </div>
+          <div class="category_card flex" style="background-image: url(./assets/images/jac.jpg); background-position: center; background-size: cover;">
+            <h3>JACUZZI’S</h3>
+            <p>Heerlijk bubbelen in je eigen achtertuin</p>
+            <a href="#" class="green_btn with_arrow">JACUZZI’S</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="deals_container bg_gray">
+      <div class="row_container">
+        <div class="heading_main_container">
+          <div class="heading_container flex">
+            <h2>GOEIE DEALS</h2>
+            <a href="#">Meer deals >></a>
+          </div>
+          <div class="description_heading">
+            <p>Deze items zijn het vaakst verkocht in de afgelopen 7 dagen</p>
+          </div>
+        </div>
+        <div class="deals_content flex">
+          <div class="left_side flex">
+            <div class="item_deal">
+              <div class="image_item" style="background-image: url('./assets/images/yard.jpg'); background-size: contain; height: 150px; background-repeat: no-repeat; background-position: bottom center;">
+              </div>
+              <h3>SAUNA OBELIX 5 Persoons</h3>
+              <p>Vanaf €2500</p>
+              <a href="#">Meer informatie >></a>
             </div>
-        </section>
-    </footer>
+            <div class="item_deal">
+              <div class="image_item" style="background-image: url('./assets/images/yard.jpg'); background-size: contain; height: 150px; background-repeat: no-repeat; background-position: bottom center;">
+              </div>
+              <h3>SAUNA OBELIX 5 Persoons</h3>
+              <p>Vanaf €2500</p>
+              <a href="#">Meer informatie >></a>
+            </div>
+            <div class="item_deal">
+              <div class="image_item" style="background-image: url('./assets/images/yard.jpg'); background-size: contain; height: 150px; background-repeat: no-repeat; background-position: bottom center;">
+              </div>
+              <h3>SAUNA OBELIX 5 Persoons</h3>
+              <p>Vanaf €2500</p>
+              <a href="#">Meer informatie >></a>
+            </div>
+          </div>
+          <div class="right_side flex">
+            <div class="main_sale">
+              <div class="sale_image">
+                <img src="./assets/images/yard.jpg" alt="the alt">
+              </div>
+              <h3>SALE</h3>
+              <p>Tot wel 30% korting!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="rates_container">
+      <div class="row_container">
+        <div class="heading_container">
+          <div class="space_between rates_heading flex">
+            <div class="google_star font_medium flex">
+              <p>UITSTEKEND</p>
+              <div class="image_star_container flex">
+                <img src="./assets/images/star.png" alt="star icon">
+                <img src="./assets/images/star.png" alt="star icon">
+                <img src="./assets/images/star.png" alt="star icon">
+                <img src="./assets/images/star.png" alt="star icon">
+                <img src="./assets/images/star.png" alt="star icon">
+              </div>
+              <p>512 recensies op</p>
+              <img src="./assets/images/google-lg.png" alt="google icon" height="20px">
+            </div>
+            <h2>WAT ANDEREN OVER ONS ZEGGEN</h2>
+          </div>
+        </div>
+        <div class="slider_reviews ">
+          <div class="item_review">
+            <div class="item_box_review">
+              <div class="item_heading_review flex space_between">
+                <div class="image_star_container flex">
+                  <img src="./assets/images/star.png" alt="star icon">
+                  <img src="./assets/images/star.png" alt="star icon">
+                  <img src="./assets/images/star.png" alt="star icon">
+                  <img src="./assets/images/star.png" alt="star icon">
+                  <img src="./assets/images/star.png" alt="star icon">
+                </div>
+                <img src="./assets/images/google.svg" alt="google icon" height="20px">
+              </div>
+              <div class="item_content_review">
+                <p>Precies gevonden wat ik zocht, en tevens heeft het product al mijn verwachtingen overtroffen! Tuiyn heeft me fantastisch geholpen bij het maken van de juiste keuze voor mijn zweef parasol! </p>
+              </div>
+            </div>
+            <div class="the_reviewer_box flex">
+              <img src="./assets/images/reviewer.jpg" alt="people name">
+              <div class="the_reviewer_identity">
+                <h4>Julian Ros</h4>
+                <p>30 februari 2024</p>
+              </div>
+            </div>
+          </div>
+          <div class="item_review">
+            <div class="item_box_review">
+              <div class="item_heading_review flex space_between">
+                <div class="image_star_container flex">
+                  <img src="./assets/images/star.png" alt="star icon">
+                  <img src="./assets/images/star.png" alt="star icon">
+                  <img src="./assets/images/star.png" alt="star icon">
+                  <img src="./assets/images/star.png" alt="star icon">
+                  <img src="./assets/images/star.png" alt="star icon">
+                </div>
+                <img src="./assets/images/google.svg" alt="google icon" height="20px">
+              </div>
+              <div class="item_content_review">
+                <p>Precies gevonden wat ik zocht, en tevens heeft het product al mijn verwachtingen overtroffen! Tuiyn heeft me fantastisch geholpen bij het maken van de juiste keuze voor mijn zweef parasol! </p>
+              </div>
+            </div>
+            <div class="the_reviewer_box flex">
+              <img src="./assets/images/reviewer.jpg" alt="people name">
+              <div class="the_reviewer_identity">
+                <h4>Julian Ros</h4>
+                <p>30 februari 2024</p>
+              </div>
+            </div>
+          </div>
+          <div class="item_review">
+            <div class="item_box_review">
+              <div class="item_heading_review flex space_between">
+                <div class="image_star_container flex">
+                  <img src="./assets/images/star.png" alt="star icon">
+                  <img src="./assets/images/star.png" alt="star icon">
+                  <img src="./assets/images/star.png" alt="star icon">
+                  <img src="./assets/images/star.png" alt="star icon">
+                  <img src="./assets/images/star.png" alt="star icon">
+                </div>
+                <img src="./assets/images/google.svg" alt="google icon" height="20px">
+              </div>
+              <div class="item_content_review">
+                <p>Precies gevonden wat ik zocht, en tevens heeft het product al mijn verwachtingen overtroffen! Tuiyn heeft me fantastisch geholpen bij het maken van de juiste keuze voor mijn zweef parasol! </p>
+              </div>
+            </div>
+            <div class="the_reviewer_box flex">
+              <img src="./assets/images/reviewer.jpg" alt="people name">
+              <div class="the_reviewer_identity">
+                <h4>Julian Ros</h4>
+                <p>30 februari 2024</p>
+              </div>
+            </div>
+          </div>
+          <div class="item_review">
+            <div class="item_box_review">
+              <div class="item_heading_review flex space_between">
+                <div class="image_star_container flex">
+                  <img src="./assets/images/star.png" alt="star icon">
+                  <img src="./assets/images/star.png" alt="star icon">
+                  <img src="./assets/images/star.png" alt="star icon">
+                  <img src="./assets/images/star.png" alt="star icon">
+                  <img src="./assets/images/star.png" alt="star icon">
+                </div>
+                <img src="./assets/images/google.svg" alt="google icon" height="20px">
+              </div>
+              <div class="item_content_review">
+                <p>Precies gevonden wat ik zocht, en tevens heeft het product al mijn verwachtingen overtroffen! Tuiyn heeft me fantastisch geholpen bij het maken van de juiste keuze voor mijn zweef parasol! </p>
+              </div>
+            </div>
+            <div class="the_reviewer_box flex">
+              <img src="./assets/images/reviewer.jpg" alt="people name">
+              <div class="the_reviewer_identity">
+                <h4>Julian Ros</h4>
+                <p>30 februari 2024</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="inspiratie_container bg_dark_green ">
+      <div class="row_container">
+        <div class="heading_main_container font_white">
+          <div class="heading_container flex">
+            <h2>INSPIRATIE NODIG?</h2>
+            <a href="#">Alle artikelen >></a>
+          </div>
+          <div class="description_heading">
+            <p>Wij zoeken continu uit wat de laatste trends en populaire ontwikkelingen zijn binnen onze branche. Hieronder zie je meerdere artikelen, tips en tricks om uw achtertuin het beste tot z’n recht te laten komen!</p>
+          </div>
+        </div>
+        <div class="inspirate_cards">
+          <div class="inspirate_item">
+            <div class="inpisrate_image" style="background-image: url(./assets/images/jac.jpg); background-position: center; background-size: cover;">
+            </div>
+            <div class="inpirate_detail">
+              <h4>DE 10 BESTE ZWEEFPARASOLS VAN HET MOMENT!</h4>
+              <p>Lorem ipsum dolor sit amet. Eum obcaecati consequuntur rem quidem incidunt ut temporibus recusandae non</p>
+              <a href="#" class="green_btn with_arrow">VERDER LEZEN</a>
+            </div>
+          </div>
+          <div class="inspirate_item">
+            <div class="inpisrate_image" style="background-image: url(./assets/images/jac.jpg); background-position: center; background-size: cover;">
+            </div>
+            <div class="inpirate_detail">
+              <h4>DE 10 BESTE ZWEEFPARASOLS VAN HET MOMENT!</h4>
+              <p>Lorem ipsum dolor sit amet. Eum obcaecati consequuntur rem quidem incidunt ut temporibus recusandae non</p>
+              <a href="#" class="green_btn with_arrow">VERDER LEZEN</a>
+            </div>
+          </div>
+          <div class="inspirate_item">
+            <div class="inpisrate_image" style="background-image: url(./assets/images/jac.jpg); background-position: center; background-size: cover;">
+            </div>
+            <div class="inpirate_detail">
+              <h4>DE 10 BESTE ZWEEFPARASOLS VAN HET MOMENT!</h4>
+              <p>Lorem ipsum dolor sit amet. Eum obcaecati consequuntur rem quidem incidunt ut temporibus recusandae non</p>
+              <a href="#" class="green_btn with_arrow">VERDER LEZEN</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about_container">
+      <div class="row_container">
+        <div class="about_content">
+          <div class="left_side">
+            <h2>OVER ONZE TUINPRODUCTEN</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+            <p> Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh.</p>
+            <h3>JACUZZI’S VOOR IN DE TUIN</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+          </div>
+          <div class="right_side">
+            <h3>GOED HOUT, BETERE PRIJZEN</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+            <h3>LEKKER BUBBELEN IN JOUW EIGEN ACHTERTUIN</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+            <p> Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="contact_section">
+      <div class="row_container font_white flex space_between">
+        <img src="./assets/images/people-pointing.png" alt="people pointing" height="300px">
+        <div class="contact_cards">
+          <div class="contact_item">
+            <img src="./assets/images/call-white.png" alt="call icon">
+            <h4>Bel ons op 0800-1234</h4>
+            <p>Bereikbaar van 08:00 - 17:00</p>
+          </div>
+          <div class="contact_item">
+            <img src="./assets/images/chat.png" alt="chat icon">
+            <h4>Chat met ons!</h4>
+            <p>Bereikbaar van 08:00 - 17:00</p>
+          </div>
+          <div class="contact_item">
+            <img src="./assets/images/whatsaap.png" alt="whatsaap icon">
+            <h4>WhatsApp</h4>
+            <p> Op werkdagen gelijk antwoord! </p>
+          </div>
+          <div class="contact_item">
+            <img src="./assets/images/email.png" alt="email icon">
+            <h4>Stuur ons een email!</h4>
+            <p> Op werkdagen gelijk antwoord!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="menu_footer_section bg_dark_green">
+      <div class="row_container">
+        <div class="menu_item_cards">
+          <div class="menu_item_footer">
+            <img src="./assets/images/white-logo.jpg" alt="logo white" class="logo">
+            <div class="social_media">
+              <a href="#"><img src="./assets/images/ig.svg" alt="ig icon"></a>
+              <a href="#"><img src="./assets/images/fb.svg" alt="fb icon"></a>
+              <a href="#"><img src="./assets/images/linkedin.svg" alt="linkedin icon"></a>
+            </div>
+            <div class="location_items">
+              <div class="location_item">
+                <img src="./assets/images/location.svg" alt="location icon">
+                <a href="#">Straatnaam 123 1234 AB, Amsterdam</a>
+              </div>
+              <div class="location_item">
+                <img src="./assets/images/call-white.png" alt="call us">
+                <a href="tel:+123456789">+123456789</a>
+              </div>
+              <div class="location_item">
+                <img src="./assets/images/email.png" alt="mail us">
+                <a href="mailto:Info@tuiyn.nl">Info@tuiyn.nl</a>
+              </div>
+            </div>
+          </div>
+          <div class="menu_item_footer">
+            <h3>Menu.</h3>
+            <div class="divider"></div>
+            <ul>
+              <li><a href="#">Blokhutten</a></li>
+              <li><a href="#">Sauna’s</a></li>
+              <li><a href="#">Schuttingen</a></li>
+              <li><a href="#">Veranda’s</a></li>
+              <li><a href="#">Tuinkasten</a></li>
+              <li><a href="#">Sale</a></li>
+            </ul>
+          </div>
+          <div class="menu_item_footer">
+            <h3>KLANTENSERVICE.</h3>
+            <div class="divider"></div>
+            <ul>
+              <li><a href="#">Klantenservice</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Garantie</a></li>
+              <li><a href="#">Bezorgen</a></li>
+            </ul>
+          </div>
+          <div class="menu_item_footer">
+            <h3>EXTRA MENU.</h3>
+            <div class="divider"></div>
+            <ul>
+              <li><a href="#">Extra 1</a></li>
+              <li><a href="#">Extra 1</a></li>
+              <li><a href="#">Extra 1</a></li>
+              <li><a href="#">Extra 1</a></li>
+              <li><a href="#">Extra 1</a></li>
+            </ul>
+          </div>
+          <div class="menu_item_footer">
+            <h3>NIEUWSBRIEF.</h3>
+            <div class="divider"></div>
+            <p>Schrijf je in voor onze nieuwsbrief en profiteer gelijk van mooie kortingen en blijf op de hoogte van alle nieuwtjes rondom jouw favoriete tuiynspullen specialist!</p>
+            <form action="#">
+              <input type="email" placeholder="Uw e-mail adres...">
+              <button type="submit">Verstuur!</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright_section bg_dark_green font_white">
+      <div class="row_container ">
+        <div class="copyright_content flex">
+          <p>All rights reserved Tuiyn.nl 2024</p>
+          <ul>
+            <li><a href="#">Algemene voorwaarden</a></li>
+            <li><a href="#"> Privacy Policy</a></li>
+          </ul>
+          <div class="payment_method">
+            <img src="./assets/images/visa.png" alt="visa">
+            <img src="./assets/images/visa.png" alt="visa">
+            <img src="./assets/images/visa.png" alt="visa">
+            <img src="./assets/images/visa.png" alt="visa">
+          </div>
+          <div class="social_media bg_white">
+            <a href="#"><img src="./assets/images/ig.svg" alt="ig icon"></a>
+            <a href="#"><img src="./assets/images/fb.svg" alt="fb icon"></a>
+            <a href="#"><img src="./assets/images/linkedin.svg" alt="linkedin icon"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="pop_up_cart" style="display: none;">
+      <div class="backdrop"></div>
+      <div id="wrap_popup">
+        <div class="content_popup">
+          <div class="popup_header flex space_between">
+            <h2>Winkelwagen</h2>
+            <button class="close-call"><img src="./assets/images/close.svg" alt="close button"></button>
+          </div>
+          <hr>
+          <div class="items_cart_popup">
+            <div class="item_cart">
+              <div class="item_image">
+                <img src="./assets/images/small.jpeg" alt="item_image" width="100px">
+              </div>
+              <div class="item_product">
+                <a href="#"> Keter Cortina 97 kunststof tuinhuis Antraciet </a>
+                <select name="product_quantity" class="select2">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+              </div>
+              <div class="item_price">
+                <p>€ 2.149,-</p>
+                <a class="remove_this_item" href="#"><img src="./assets/images/close.svg" alt="close button"> Verwijderen</a>
+              </div>
+            </div>
+            <div class="item_cart">
+              <div class="item_image">
+                <img src="./assets/images/small.jpeg" alt="item_image" width="100px">
+              </div>
+              <div class="item_product">
+                <a href="#"> Keter Cortina 97 kunststof tuinhuis Antraciet </a>
+                <select name="product_quantity" class="select2">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+              </div>
+              <div class="item_price">
+                <p>€ 2.149,-</p>
+                <a class="remove_this_item" href="#"><img src="./assets/images/close.svg" alt="close button"> Verwijderen</a>
+              </div>
+            </div>
+            <div class="item_cart">
+              <div class="item_image">
+                <img src="./assets/images/small.jpeg" alt="item_image" width="100px">
+              </div>
+              <div class="item_product">
+                <a href="#"> Keter Cortina 97 kunststof tuinhuis Antraciet </a>
+                <select name="product_quantity" class="select2">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+              </div>
+              <div class="item_price">
+                <p>€ 2.149,-</p>
+                <a class="remove_this_item" href="#"><img src="./assets/images/close.svg" alt="close button"> Verwijderen</a>
+              </div>
+            </div>
+          </div>
+          <div class="popup_footer">
+            <hr>
+            <div class="shipment flex space_between">
+              <p>Verzendkosten</p>
+              <p>GRATIS</p>
+            </div>
+            <div class="total flex space_between">
+              <p>Totaal</p>
+              <p>€ 2.149,-</p>
+            </div>
+            <hr>
+            <a href="#" class="bg_green font_white afrekenen">Afrekenen</a>
+            <a href="#" class="email_pop">Winkelwagen e-mailen</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
 </body>
 
 </html>
