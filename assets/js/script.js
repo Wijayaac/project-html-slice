@@ -14,6 +14,7 @@ jQuery(document).ready(function ($) {
   fancyBoxAdd($);
   toggleFilter($);
   popUpModal($);
+  toggleSubmenuCategory($);
 });
 
 function popUpModal($) {
@@ -25,10 +26,13 @@ function popUpModal($) {
     });
 
     // Close pop_appointment if the user clicks outside of appointment_container
-    $(".popup_appointment_overlay, .appointment_header .close").on("click", function () {
-      $(".pop_appointment").removeClass("active");
-      $(document.body).removeClass("no-scroll");
-    });
+    $(".popup_appointment_overlay, .appointment_header .close").on(
+      "click",
+      function () {
+        $(".pop_appointment").removeClass("active");
+        $(document.body).removeClass("no-scroll");
+      }
+    );
   }
 }
 
@@ -162,16 +166,26 @@ function slickWithThumba($) {
     $(".product__slider-thmb .slick-slide").eq(0).addClass("slick-active");
 
     // On before slide change match active thumbnail to current slide
-    $(".product__slider-main").on("beforeChange", function (event, slick, currentSlide, nextSlide) {
-      var mySlideNumber = nextSlide;
-      $(".product__slider-thmb .slick-slide").removeClass("slick-active");
-      $(".product__slider-thmb .slick-slide").eq(mySlideNumber).addClass("slick-active");
-    });
+    $(".product__slider-main").on(
+      "beforeChange",
+      function (event, slick, currentSlide, nextSlide) {
+        var mySlideNumber = nextSlide;
+        $(".product__slider-thmb .slick-slide").removeClass("slick-active");
+        $(".product__slider-thmb .slick-slide")
+          .eq(mySlideNumber)
+          .addClass("slick-active");
+      }
+    );
 
     // init slider
     require(["js-sliderWithProgressbar"], function (slider) {
       $(".product__slider-main").each(function () {
-        me.slider = new slider($(this), options, sliderOptions, previewSliderOptions);
+        me.slider = new slider(
+          $(this),
+          options,
+          sliderOptions,
+          previewSliderOptions
+        );
 
         // stop slider
         //me.slider.stop();
@@ -358,4 +372,17 @@ function closeFilter($) {
   $(".filter_section").removeClass("active");
   $(".filter_overlay").removeClass("active");
   $(document.body).removeClass("no-scroll");
+}
+
+function toggleSubmenuCategory($) {
+  var loadMoreButtons = $(".arrow_more");
+  if (loadMoreButtons.length === 0) {
+    return;
+  }
+
+  loadMoreButtons.each(function () {
+    $(this).on("click", function () {
+      $(this).closest(".sub_category").toggleClass("active");
+    });
+  });
 }
