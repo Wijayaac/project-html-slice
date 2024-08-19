@@ -2,822 +2,872 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
-  <script src="./assets/js/jquery.min.js"></script>
-  <script src="./assets/js/script.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <link rel="stylesheet" href="./assets/css/custom.css">
-  <link rel="stylesheet" href="./assets/css/responsive.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/custom.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 
 <body>
-  <header>
-    <div class="top_section bg_black">
-      <div class="row_container font_white flex">
-        <div class="google_star flex">
-          <p>UITSTEKEND</p>
-          <div class="image_star_container flex">
-            <img src="./assets/images/star.png" alt="star icon">
-            <img src="./assets/images/star.png" alt="star icon">
-            <img src="./assets/images/star.png" alt="star icon">
-            <img src="./assets/images/star.png" alt="star icon">
-            <img src="./assets/images/star.png" alt="star icon">
-          </div>
-          <p>512 recensies op</p>
-          <img src="./assets/images/google-lg.png" alt="google icon" height="20px">
-        </div>
-        <div class="item-check flex">
-          <span class="rounded_green">
-            <img src="./assets/images/check.svg" alt="check icon">
-          </span>
-          <p>Binnen 1 à 2 dagen geleverd</p>
-        </div>
-        <div class="item-check flex">
-          <span class="rounded_green">
-            <img src="./assets/images/check.svg" alt="check icon">
-          </span>
-          <p>Expert op tuiyngebied</p>
-        </div>
-        <div class="item-check flex">
-          <span class="rounded_green">
-            <img src="./assets/images/check.svg" alt="check icon">
-          </span>
-          <p>100% Tevredenheidgarantie</p>
-        </div>
-      </div>
-    </div>
-    <div class="middle_section">
-      <div class="row_container flex row">
-        <img src="./assets/images/black-logo.jpg" alt="site logo" class="site_logo" width="250px">
-        <form action="" class="search_form">
-          <div class="with_border">
-            <img src="./assets/images/search.svg" alt="search" width="20px">
-            <input type="text" placeholder="Waar bent u naar opzoek?">
-          </div>
-          <button type="submit" class="bg_green font_white">Zoeken</button>
-        </form>
-        <div class="profile_container flex row">
-          <div class="profile_item flex row">
-            <div class="icon_container">
-              <img src="./assets/images/headset.png" alt="customer services">
-            </div>
-            <div class="flew row">
-              <p><strong>Klantenservice</strong></p>
-              <p><a href="tel:0800-1234">0800-1234</a></p>
-            </div>
-          </div>
-          <div class="profile_item flex row with_chart">
-            <div class="icon_container">
-              <img src="./assets/images/lock.png" alt="customer services">
-              <strong><span class="rounded_green font_white">2</span></strong>
-            </div>
-            <div class="flew row">
-              <p><strong>Winkelwagen</strong></p>
-              <p>€12,64</p>
-            </div>
-          </div>
-          <div class="profile_item flex row">
-            <div class="icon_container">
-              <img src="./assets/images/person.png" alt="customer services">
-            </div>
-            <div class="flew row">
-              <p><strong>Mijn Account</strong></p>
-              <p>Inloggen</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="bottom_section bg_gray">
-      <div class="row_container flex categories_menu_container">
-        <ul>
-          <li><a class="all_cat category_btn"> <img src="./assets/images/menu-white.png" alt="menu icon" srcset=""> Alle categorieen</a></li>
-          <li><a href="#">Blokhutten</a></li>
-          <li><a href="#">Sauna’s</a></li>
-          <li><a href="#">Tuinkasten</a></li>
-          <li><a href="#">Jacuzzi’s</a></li>
-          <li><a href="#">Parasols</a></li>
-          <li><a href="#">Categorie6</a></li>
-          <li><a href="#">Categorie7</a></li>
-          <li><a href="#">Categorie8</a></li>
-        </ul>
-      </div>
-    </div>
-    <section class="slider_categories">
-      <div id="wrap_slider">
-        <div class="popup_header flex space_between">
-          <h2>Kies een categorie</h2>
-          <button class="close-call"><img src="./assets/images/close.svg" alt="close button"></button>
-        </div>
-        <ul>
-          <li>
-            <a href="#">Sauna’s</a>
-            <div class="arrow_btn">
-              <button><img src="./assets/images/arrow-gray.svg" alt="next menu"></button>
-            </div>
-            <!-- the sub menu -->
-            <div class="sub-menu">
-              <div class="popup_header flex space_between">
-                <h2>Sauna’s</h2>
-                <button class="close-call"><img src="./assets/images/close.svg" alt="close button" height="20px"></button>
-              </div>
-              <div class="back_to_main_category">
-                <a class="close_sub_menu">
-                  <img src="./assets/images/prev_green.svg" alt="back icon">
-                  <p>Back to main category</p>
-                </a>
-              </div>
-              <hr class="divider_with_space">
-              <ul class="sub_menu_item_list">
-                <li>
-                  <a href="#">
-                    <p>aaaa</p>
-                    <img src="./assets/images/arrow-gray.svg" alt="next menu">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <p>aaaa</p>
-                    <img src="./assets/images/arrow-gray.svg" alt="next menu">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <p>aaaa</p>
-                    <img src="./assets/images/arrow-gray.svg" alt="next menu">
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <a href="#">Tuinkasten</a>
-            <div class="arrow_btn"><button><img src="./assets/images/arrow-gray.svg" alt="next menu"></button></div>
-          </li>
-          <li>
-            <a href="#">Tuinkasten</a>
-            <div class="arrow_btn"><button><img src="./assets/images/arrow-gray.svg" alt="next menu"></button></div>
-          </li>
-          <li>
-            <a href="#">Tuinkasten</a>
-            <div class="arrow_btn"><button><img src="./assets/images/arrow-gray.svg" alt="next menu"></button></div>
-          </li>
-        </ul>
-      </div>
-      <div class="backdrop"></div>
-    </section>
-  </header>
-  <main>
-    <div class="breadcrumb_container row_container">
-      <div class="breadcrumb">
-        <a href="#">Home</a>
-        <p> / </p>
-        <a href="#">Blokhutten</a>
-      </div>
-      <div class="items_slider_container">
-        <div class="items_slider">
-          <div class="item_slider flex">
-            <img src="./assets/images/house.svg" alt="house icon">
-            <p>Bamboe Blokhutten</p>
-          </div>
-          <div class="item_slider flex">
-            <img src="./assets/images/house.svg" alt="house icon">
-            <p>Bamboe Blokhutten</p>
-          </div>
-          <div class="item_slider flex">
-            <img src="./assets/images/house.svg" alt="house icon">
-            <p>Bamboe Blokhutten</p>
-          </div>
-          <div class="item_slider flex">
-            <img src="./assets/images/house.svg" alt="house icon">
-            <p>Bamboe Blokhutten</p>
-          </div>
-          <div class="item_slider flex">
-            <img src="./assets/images/house.svg" alt="house icon">
-            <p>Bamboe Blokhutten</p>
-          </div>
-          <div class="item_slider flex">
-            <img src="./assets/images/house.svg" alt="house icon">
-            <p>Bamboe Blokhutten</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="category_page row_container">
-      <div class="filter_section">
-        <div class="categories_result">
-          <button class="filter_close">
-            <img src="/assets/images/close.svg" alt="" />
-          </button>
-          <div class="main_category">
-            <a href="#" class="row_back">Tuiyn.nl</a>
-          </div>
-          <div class="main_category">
-            <a href="#" class="row_back">Blokhutten</a>
-            <div class="sub_category">
-              <a href="#">Houten blokhutten</a>
-              <ul class="sub_category-wrapper">
-                <li><a href="#">Category 1</a></li>
-                <li><a href="#">Category 1</a></li>
-                <li><a href="#">Category 1</a></li>
-                <li><a href="#">Category 1</a></li>
-                <li><a href="#">Category 1</a></li>
-              </ul>
-              <button class="arrow_more" type="button">Bekijk meer</button>
-            </div>
-            <div class="sub_category">
-              <a href="#">Blokhutten accessoires</a>
-            </div>
-            <div class="result_search">
-              <p>115 resultaten</p>
-              <p>in Blokhutten</p>
-            </div>
-          </div>
-          <hr>
-          <div class="filter_part_container">
-            <div class="active_filters">
-              <h3>Actieve filters:</h3>
-              <div class="filter_content">
-                <p>Hout <button class="remove"></button></p>
-                <p>Breedte: 120 - 900 cm <button class="remove"></button></p>
-                <p>Ja <button class="remove"></button></p>
-                <p>Plat Dak <button class="remove"></button></p>
-              </div>
-              <button class="remove_all_active_filter">Alle filters verwijderen</button>
-            </div>
-            <div class="item_filter">
-              <button class="slide_the_list">Materiaal</button>
-              <div class="check_list">
-                <div class="flex column gap-1">
-                  <label for="Hout">
-                    <input type="checkbox" id="Hout" name="Hout" value="Hout">
-                    <span>Hout</span>
-                  </label>
-                  <label for="Kunststof">
-                    <input type="checkbox" id="Kunststof" name="Kunststof" value="Kunststof">
-                    <span>Kunststof</span>
-                  </label>
-                  <label for="Metalen">
-                    <input type="checkbox" id="Metalen" name="Metalen" value="Metalen">
-                    <span>Metalen</span>
-                  </label>
+    <header>
+        <div class="top_section bg_black">
+            <div class="row_container font_white flex">
+                <div class="google_star flex">
+                    <p>UITSTEKEND</p>
+                    <div class="image_star_container flex">
+                        <img src="./assets/images/star.png" alt="star icon">
+                        <img src="./assets/images/star.png" alt="star icon">
+                        <img src="./assets/images/star.png" alt="star icon">
+                        <img src="./assets/images/star.png" alt="star icon">
+                        <img src="./assets/images/star.png" alt="star icon">
+                    </div>
+                    <p>512 recensies op</p>
+                    <img src="./assets/images/google-lg.png" alt="google icon" height="20px">
                 </div>
-              </div>
+                <div class="item-check flex">
+                    <span class="rounded_green">
+                        <img src="./assets/images/check.svg" alt="check icon">
+                    </span>
+                    <p>Binnen 1 à 2 dagen geleverd</p>
+                </div>
+                <div class="item-check flex">
+                    <span class="rounded_green">
+                        <img src="./assets/images/check.svg" alt="check icon">
+                    </span>
+                    <p>Expert op tuiyngebied</p>
+                </div>
+                <div class="item-check flex">
+                    <span class="rounded_green">
+                        <img src="./assets/images/check.svg" alt="check icon">
+                    </span>
+                    <p>100% Tevredenheidgarantie</p>
+                </div>
             </div>
-            <div class="item_filter">
-              <button class="slide_the_list">Daktype</button>
-              <div class="check_list">
-                <div class="flex column gap-1">
-                  <label for="Lessenaarsdak">
-                    <input type="checkbox" id="Lessenaarsdak" name="Lessenaarsdak" value="Lessenaarsdak">
-                    <span>Lessenaarsdak</span>
-                  </label>
-                  <label for="Plat-dak">
-                    <input type="checkbox" id="Plat-dak" name="Plat-dak" value="Plat dak">
-                    <span>Plat dak</span>
-                  </label>
-                  <label for="Zadeldak">
-                    <input type="checkbox" id="Zadeldak" name="Zadeldak" value="Zadeldak">
-                    <span>Zadeldak</span>
-                  </label>
-                </div>
-              </div>
-            </div>
-            <div class="item_filter">
-              <button class="slide_the_list">Dubbelzijdig glas</button>
-              <div class="check_list">
-                <div class="flex column gap-1">
-                  <label for="Ja">
-                    <input type="checkbox" id="Ja" name="Ja" value="Ja">
-                    <span>Ja</span>
-                  </label>
-                  <label for="Nee">
-                    <input type="checkbox" id="Nee" name="Nee" value="Nee">
-                    <span>Nee</span>
-                  </label>
-                </div>
-              </div>
-            </div>
-            <hr>
-            <div class="item_filter measure_filter">
-              <div class="measure_item">
-                <h4>Prijs</h4>
-                <div class="measure_content">
-                  <p class="size">€</p>
-                  <input type="number" name="min_prijs" id="min_prijs" min="0" max="1000" placeholder="145">
-                  <p>tot</p>
-                  <input type="number" name="max_prijs" id="max_prijs" min="0" max="1000" placeholder="300">
-                  <button type="submit" class="bg_green"><img src="./assets/images/arrow-white.png" alt="submit"></button>
-                </div>
-              </div>
-              <div class="measure_item">
-                <h4>Breedte</h4>
-                <div class="measure_content">
-                  <p class="size">cm</p>
-                  <input type="number" name="min_breedte" id="min_breedte" min="0" max="1000" placeholder="145">
-                  <p>tot</p>
-                  <input type="number" name="max_breedte" id="max_breedte" min="0" max="1000" placeholder="300">
-                  <button type="submit" class="bg_green"><img src="./assets/images/arrow-white.png" alt="submit"></button>
-                </div>
-              </div>
-              <div class="measure_item">
-                <h4>Diepte</h4>
-                <div class="measure_content">
-                  <p class="size">cm</p>
-                  <input type="number" name="min_diepte" id="min_diepte" min="0" max="1000" placeholder="145">
-                  <p>tot</p>
-                  <input type="number" name="max_diepte" id="max_diepte" min="0" max="1000" placeholder="300">
-                  <button type="submit" class="bg_green"><img src="./assets/images/arrow-white.png" alt="submit"></button>
-                </div>
-              </div>
-              <div class="measure_item">
-                <h4>Hoogte</h4>
-                <div class="measure_content">
-                  <p class="size">cm</p>
-                  <input type="number" name="min_hoogte" id="min_hoogte" min="0" max="1000" placeholder="145">
-                  <p>tot</p>
-                  <input type="number" name="max_hoogte" id="max_hoogte" min="0" max="1000" placeholder="300">
-                  <button type="submit" class="bg_green"><img src="./assets/images/arrow-white.png" alt="submit"></button>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-        <div class="green_card bg_dark_green font_white">
-          <div class="bg_image"></div>
-          <div class="card_content">
-            <h2>HULP NODIG?</h2>
-            <p>Wij helpen u graag op weg!</p>
-            <div class="contact_cards">
-              <div class="contact_item flex">
-                <img src="./assets/images/whatsaap.png" alt="whatsaap icon">
-                <div>
-                  <h4>WhatsApp</h4>
-                  <a href="tel:0612345678">0612345678</a>
+        <div class="middle_section">
+            <div class="row_container flex row">
+                <img src="./assets/images/black-logo.jpg" alt="site logo" class="site_logo" width="250px">
+                <form action="" class="search_form">
+                    <div class="with_border">
+                        <img src="./assets/images/search.svg" alt="search" width="20px">
+                        <input type="text" placeholder="Waar bent u naar opzoek?">
+                    </div>
+                    <button type="submit" class="bg_green font_white">Zoeken</button>
+                </form>
+                <div class="profile_container flex row">
+                    <div class="profile_item flex row">
+                        <div class="icon_container">
+                            <img src="./assets/images/headset.png" alt="customer services">
+                        </div>
+                        <div class="flew row">
+                            <p><strong>Klantenservice</strong></p>
+                            <p><a href="tel:0800-1234">0800-1234</a></p>
+                        </div>
+                    </div>
+                    <div class="profile_item flex row with_chart">
+                        <div class="icon_container">
+                            <img src="./assets/images/lock.png" alt="customer services">
+                            <strong><span class="rounded_green font_white">2</span></strong>
+                        </div>
+                        <div class="flew row">
+                            <p><strong>Winkelwagen</strong></p>
+                            <p>€12,64</p>
+                        </div>
+                    </div>
+                    <div class="profile_item flex row">
+                        <div class="icon_container">
+                            <img src="./assets/images/person.png" alt="customer services">
+                        </div>
+                        <div class="flew row">
+                            <p><strong>Mijn Account</strong></p>
+                            <p>Inloggen</p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="contact_item flex">
-                <img src="./assets/images/email.png" alt="email icon">
-                <div>
-                  <h4>Chat met ons!</h4>
-                  <a href="mailto:Info@tuiyn.nl">Info@tuiyn.nl</a>
-                </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="filter_result_section">
-        <div class="filter_result_header">
-          <h1>Blokhutten</h1>
-          <div class="sort_by_container">
-            <p>Artikelen per pagina</p>
-            <select name="paging" id="paging" class="arrow_up_down select2">
-              <option value="12">12</option>
-              <option value="24">24</option>
-              <option value="50">50</option>
-            </select>
-            <select name="sortby" id="sortby" class="arrow_up_down  select2">
-              <option value="desc">Prijs oplopend</option>
-              <option value="asc">asc</option>
-            </select>
-          </div>
+        <div class="bottom_section bg_gray">
+            <div class="row_container flex categories_menu_container">
+                <ul>
+                    <li><a class="all_cat category_btn"> <img src="./assets/images/menu-white.png" alt="menu icon"
+                                srcset=""> Alle categorieen</a></li>
+                    <li><a href="#">Blokhutten</a></li>
+                    <li><a href="#">Sauna’s</a></li>
+                    <li><a href="#">Tuinkasten</a></li>
+                    <li><a href="#">Jacuzzi’s</a></li>
+                    <li><a href="#">Parasols</a></li>
+                    <li><a href="#">Categorie6</a></li>
+                    <li><a href="#">Categorie7</a></li>
+                    <li><a href="#">Categorie8</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="result_container">
-          <div class="products_result_header">
-            <div class="product_container">
-              <div class="header_product">
-                <p>
-                  <span class="discount">-33%</span>
-                  <span class="aanbieding">Aanbieding</span>
-                </p>
-              </div>
-              <div class="image_container">
-                <img src="./assets/images/product.jpg" alt="product a">
-              </div>
-              <div class="product_review">
-                <span>Tuiyn</span>
-                <div class="image_star_container flex">
-                  <img src="./assets/images/star.png" alt="star icon">
-                  <img src="./assets/images/star.png" alt="star icon">
-                  <img src="./assets/images/star.png" alt="star icon">
-                  <img src="./assets/images/star.png" alt="star icon">
-                  <img src="./assets/images/half-star.svg" alt="star icon">
+        <section class="slider_categories">
+            <div id="wrap_slider">
+                <div class="popup_header flex space_between">
+                    <h2>Kies een categorie</h2>
+                    <button class="close-call"><img src="./assets/images/close.svg" alt="close button"></button>
                 </div>
-                <span>(384)</span>
-              </div>
-              <div class="product_description">
-                <h4> Blokhut Chapin </h4>
-                <p class="flexible font_grey xss">Flexibele deurplaatsing</p>
-                <p class="approved xss">Op voorraad</p>
-              </div>
-              <div class="price_container">
-                <p class="real_price font_grey ">1399</p>
-                <p class="discounted_price">799,-</p>
-              </div>
-              <p class="art_number font_grey xss">Art.nummer: 12345678</p>
+                <ul>
+                    <li>
+                        <a href="#">Sauna’s</a>
+                        <div class="arrow_btn">
+                            <button><img src="./assets/images/arrow-gray.svg" alt="next menu"></button>
+                        </div>
+                        <!-- the sub menu -->
+                        <div class="sub-menu">
+                            <div class="popup_header flex space_between">
+                                <h2>Sauna’s</h2>
+                                <button class="close-call"><img src="./assets/images/close.svg" alt="close button"
+                                        height="20px"></button>
+                            </div>
+                            <div class="back_to_main_category">
+                                <a class="close_sub_menu">
+                                    <img src="./assets/images/prev_green.svg" alt="back icon">
+                                    <p>Back to main category</p>
+                                </a>
+                            </div>
+                            <hr class="divider_with_space">
+                            <ul class="sub_menu_item_list">
+                                <li>
+                                    <a href="#">
+                                        <p>aaaa</p>
+                                        <img src="./assets/images/arrow-gray.svg" alt="next menu">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p>aaaa</p>
+                                        <img src="./assets/images/arrow-gray.svg" alt="next menu">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p>aaaa</p>
+                                        <img src="./assets/images/arrow-gray.svg" alt="next menu">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Tuinkasten</a>
+                        <div class="arrow_btn"><button><img src="./assets/images/arrow-gray.svg"
+                                    alt="next menu"></button></div>
+                    </li>
+                    <li>
+                        <a href="#">Tuinkasten</a>
+                        <div class="arrow_btn"><button><img src="./assets/images/arrow-gray.svg"
+                                    alt="next menu"></button></div>
+                    </li>
+                    <li>
+                        <a href="#">Tuinkasten</a>
+                        <div class="arrow_btn"><button><img src="./assets/images/arrow-gray.svg"
+                                    alt="next menu"></button></div>
+                    </li>
+                </ul>
             </div>
-            <div class="product_container">
-              <div class="header_product">
-                <p>
-                  <span class="discount">-33%</span>
-                  <span class="aanbieding">Aanbieding</span>
-                </p>
-              </div>
-              <div class="image_container">
-                <img src="./assets/images/product.jpg" alt="product a">
-              </div>
-              <div class="product_review">
-                <span>Tuiyn</span>
-                <div class="image_star_container flex">
-                  <img src="./assets/images/star.png" alt="star icon">
-                  <img src="./assets/images/star.png" alt="star icon">
-                  <img src="./assets/images/star.png" alt="star icon">
-                  <img src="./assets/images/star.png" alt="star icon">
-                  <img src="./assets/images/half-star.svg" alt="star icon">
+            <div class="backdrop"></div>
+        </section>
+    </header>
+    <main>
+        <div class="breadcrumb_container row_container">
+            <div class="breadcrumb">
+                <a href="#">Home</a>
+                <p> / </p>
+                <a href="#">Blokhutten</a>
+            </div>
+            <div class="items_slider_container">
+                <div class="items_slider">
+                    <div class="item_slider flex">
+                        <img src="./assets/images/house.svg" alt="house icon">
+                        <p>Bamboe Blokhutten</p>
+                    </div>
+                    <div class="item_slider flex">
+                        <img src="./assets/images/house.svg" alt="house icon">
+                        <p>Bamboe Blokhutten</p>
+                    </div>
+                    <div class="item_slider flex">
+                        <img src="./assets/images/house.svg" alt="house icon">
+                        <p>Bamboe Blokhutten</p>
+                    </div>
+                    <div class="item_slider flex">
+                        <img src="./assets/images/house.svg" alt="house icon">
+                        <p>Bamboe Blokhutten</p>
+                    </div>
+                    <div class="item_slider flex">
+                        <img src="./assets/images/house.svg" alt="house icon">
+                        <p>Bamboe Blokhutten</p>
+                    </div>
+                    <div class="item_slider flex">
+                        <img src="./assets/images/house.svg" alt="house icon">
+                        <p>Bamboe Blokhutten</p>
+                    </div>
                 </div>
-                <span>(384)</span>
-              </div>
-              <div class="product_description">
-                <h4> Blokhut Chapin </h4>
-                <p class="flexible font_grey xss">Flexibele deurplaatsing</p>
-                <p class="approved xss">Op voorraad</p>
-              </div>
-              <div class="price_container">
-                <p class="real_price font_grey ">1399</p>
-                <p class="discounted_price">799,-</p>
-              </div>
-              <p class="art_number font_grey xss">Art.nummer: 12345678</p>
             </div>
-            <div class="product_container">
-              <div class="header_product">
-                <p>
-                  <span class="discount">-33%</span>
-                  <span class="aanbieding">Aanbieding</span>
-                </p>
-              </div>
-              <div class="image_container">
-                <img src="./assets/images/product.jpg" alt="product a">
-              </div>
-              <div class="product_review">
-                <span>Tuiyn</span>
-                <div class="image_star_container flex">
-                  <img src="./assets/images/star.png" alt="star icon">
-                  <img src="./assets/images/star.png" alt="star icon">
-                  <img src="./assets/images/star.png" alt="star icon">
-                  <img src="./assets/images/star.png" alt="star icon">
-                  <img src="./assets/images/half-star.svg" alt="star icon">
-                </div>
-                <span>(384)</span>
-              </div>
-              <div class="product_description">
-                <h4> Blokhut Chapin </h4>
-                <p class="flexible font_grey xss">Flexibele deurplaatsing</p>
-                <p class="approved xss">Op voorraad</p>
-              </div>
-              <div class="price_container">
-                <p class="real_price font_grey ">1399</p>
-                <p class="discounted_price">799,-</p>
-              </div>
-              <p class="art_number font_grey xss">Art.nummer: 12345678</p>
-            </div>
-            <div class="product_container">
-              <div class="header_product">
-                <p>
-                  <span class="discount">-33%</span>
-                  <span class="aanbieding">Aanbieding</span>
-                </p>
-              </div>
-              <div class="image_container">
-                <img src="./assets/images/product.jpg" alt="product a">
-              </div>
-              <div class="product_review">
-                <span>Tuiyn</span>
-                <div class="image_star_container flex">
-                  <img src="./assets/images/star.png" alt="star icon">
-                  <img src="./assets/images/star.png" alt="star icon">
-                  <img src="./assets/images/star.png" alt="star icon">
-                  <img src="./assets/images/star.png" alt="star icon">
-                  <img src="./assets/images/half-star.svg" alt="star icon">
-                </div>
-                <span>(384)</span>
-              </div>
-              <div class="product_description">
-                <h4> Blokhut Chapin </h4>
-                <p class="flexible font_grey xss">Flexibele deurplaatsing</p>
-                <p class="approved xss">Op voorraad</p>
-              </div>
-              <div class="price_container">
-                <p class="real_price font_grey ">1399</p>
-                <p class="discounted_price">799,-</p>
-              </div>
-              <p class="art_number font_grey xss">Art.nummer: 12345678</p>
-            </div>
-            <div class="product_container">
-              <div class="header_product">
-                <p>
-                  <span class="discount">-33%</span>
-                  <span class="aanbieding">Aanbieding</span>
-                </p>
-              </div>
-              <div class="image_container">
-                <img src="./assets/images/product.jpg" alt="product a">
-              </div>
-              <div class="product_review">
-                <span>Tuiyn</span>
-                <div class="image_star_container flex">
-                  <img src="./assets/images/star.png" alt="star icon">
-                  <img src="./assets/images/star.png" alt="star icon">
-                  <img src="./assets/images/star.png" alt="star icon">
-                  <img src="./assets/images/star.png" alt="star icon">
-                  <img src="./assets/images/half-star.svg" alt="star icon">
-                </div>
-                <span>(384)</span>
-              </div>
-              <div class="product_description">
-                <h4> Blokhut Chapin </h4>
-                <p class="flexible font_grey xss">Flexibele deurplaatsing</p>
-                <p class="approved xss">Op voorraad</p>
-              </div>
-              <div class="price_container">
-                <p class="real_price font_grey ">1399</p>
-                <p class="discounted_price">799,-</p>
-              </div>
-              <p class="art_number font_grey xss">Art.nummer: 12345678</p>
-            </div>
-            <div class="product_container">
-              <div class="header_product">
-                <p>
-                  <span class="discount">-33%</span>
-                  <span class="aanbieding">Aanbieding</span>
-                </p>
-              </div>
-              <div class="image_container">
-                <img src="./assets/images/product.jpg" alt="product a">
-              </div>
-              <div class="product_review">
-                <span>Tuiyn</span>
-                <div class="image_star_container flex">
-                  <img src="./assets/images/star.png" alt="star icon">
-                  <img src="./assets/images/star.png" alt="star icon">
-                  <img src="./assets/images/star.png" alt="star icon">
-                  <img src="./assets/images/star.png" alt="star icon">
-                  <img src="./assets/images/half-star.svg" alt="star icon">
-                </div>
-                <span>(384)</span>
-              </div>
-              <div class="product_description">
-                <h4> Blokhut Chapin </h4>
-                <p class="flexible font_grey xss">Flexibele deurplaatsing</p>
-                <p class="approved xss">Op voorraad</p>
-              </div>
-              <div class="price_container">
-                <p class="real_price font_grey ">1399</p>
-                <p class="discounted_price">799,-</p>
-              </div>
-              <p class="art_number font_grey xss">Art.nummer: 12345678</p>
-            </div>
-          </div>
-          <div class="pagination_container">
-            <div class="the_pagination">
-              <a class="go_first" href="#">
-                <img src="./assets/images/prev.svg" alt="go first page">
-                <img src="./assets/images/prev.svg" alt="go first page">
-              </a>
-              <a class="prev" href="#">
-                <img src="./assets/images/prev.svg" alt="go prec page"></a>
-              <a href="#" class="number current">1</a>
-              <a href="#" class="number">2</a>
-              <a href="#" class="number">3</a>
-              <a href="#" class="number">4</a>
-              <a class="next" href="#">
-                <img src="./assets/images/next.svg" alt="go last page">
-              </a>
-              <a class="go_last" href="#">
-                <img src="./assets/images/next.svg" alt="go last page">
-                <img src="./assets/images/next.svg" alt="go last page">
-              </a>
-            </div>
-          </div>
         </div>
-      </div>
-      <button class="filter_toggle">
-        <img src="/assets/images/filter.svg" alt="" /> Filters </button>
-    </div>
-    <div class="filter_overlay"></div>
-  </main>
-  <footer>
-    <div class="contact_section">
-      <div class="row_container font_white flex space_between">
-        <img src="./assets/images/people-pointing.png" alt="people pointing" height="300px">
-        <div class="contact_cards">
-          <div class="contact_item">
-            <img src="./assets/images/call-white.png" alt="call icon">
-            <h4>Bel ons op 0800-1234</h4>
-            <p>Bereikbaar van 08:00 - 17:00</p>
-          </div>
-          <div class="contact_item">
-            <img src="./assets/images/chat.png" alt="chat icon">
-            <h4>Chat met ons!</h4>
-            <p>Bereikbaar van 08:00 - 17:00</p>
-          </div>
-          <div class="contact_item">
-            <img src="./assets/images/whatsaap.png" alt="whatsaap icon">
-            <h4>WhatsApp</h4>
-            <p> Op werkdagen gelijk antwoord! </p>
-          </div>
-          <div class="contact_item">
-            <img src="./assets/images/email.png" alt="email icon">
-            <h4>Stuur ons een email!</h4>
-            <p> Op werkdagen gelijk antwoord!</p>
-          </div>
+        <div class="category_page row_container">
+            <div class="filter_section">
+                <div class="categories_result">
+                    <button class="filter_close">
+                        <img src="/assets/images/close.svg" alt="" />
+                    </button>
+                    <div class="main_category">
+                        <a href="#" class="row_back">Tuiyn.nl</a>
+                    </div>
+                    <div class="main_category">
+                        <a href="#" class="row_back">Blokhutten</a>
+                        <div class="sub_category">
+                            <a href="#">Houten blokhutten</a>
+                            <ul class="sub_category-wrapper">
+                                <li><a href="#">Category 1</a></li>
+                                <li><a href="#">Category 1</a></li>
+                                <li><a href="#">Category 1</a></li>
+                                <li><a href="#">Category 1</a></li>
+                                <li><a href="#">Category 1</a></li>
+                            </ul>
+                            <button class="arrow_more" type="button">Bekijk meer</button>
+                        </div>
+                        <div class="sub_category">
+                            <a href="#">Blokhutten accessoires</a>
+                        </div>
+                        <div class="result_search">
+                            <p>115 resultaten</p>
+                            <p>in Blokhutten</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="filter_part_container">
+                        <div class="active_filters">
+                            <h3>Actieve filters:</h3>
+                            <div class="filter_content">
+                                <p>Hout <button class="remove"></button></p>
+                                <p>Breedte: 120 - 900 cm <button class="remove"></button></p>
+                                <p>Ja <button class="remove"></button></p>
+                                <p>Plat Dak <button class="remove"></button></p>
+                            </div>
+                            <button class="remove_all_active_filter">Alle filters verwijderen</button>
+                        </div>
+                        <div class="item_filter">
+                            <button class="slide_the_list">Materiaal</button>
+                            <div class="check_list">
+                                <div class="flex column gap-1">
+                                    <label for="Hout">
+                                        <input type="checkbox" id="Hout" name="Hout" value="Hout">
+                                        <span>Hout</span>
+                                    </label>
+                                    <label for="Kunststof">
+                                        <input type="checkbox" id="Kunststof" name="Kunststof" value="Kunststof">
+                                        <span>Kunststof</span>
+                                    </label>
+                                    <label for="Metalen">
+                                        <input type="checkbox" id="Metalen" name="Metalen" value="Metalen">
+                                        <span>Metalen</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item_filter">
+                            <button class="slide_the_list">Daktype</button>
+                            <div class="check_list">
+                                <div class="flex column gap-1">
+                                    <label for="Lessenaarsdak">
+                                        <input type="checkbox" id="Lessenaarsdak" name="Lessenaarsdak"
+                                            value="Lessenaarsdak">
+                                        <span>Lessenaarsdak</span>
+                                    </label>
+                                    <label for="Plat-dak">
+                                        <input type="checkbox" id="Plat-dak" name="Plat-dak" value="Plat dak">
+                                        <span>Plat dak</span>
+                                    </label>
+                                    <label for="Zadeldak">
+                                        <input type="checkbox" id="Zadeldak" name="Zadeldak" value="Zadeldak">
+                                        <span>Zadeldak</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item_filter">
+                            <button class="slide_the_list">Dubbelzijdig glas</button>
+                            <div class="check_list">
+                                <div class="flex column gap-1">
+                                    <label for="Ja">
+                                        <input type="checkbox" id="Ja" name="Ja" value="Ja">
+                                        <span>Ja</span>
+                                    </label>
+                                    <label for="Nee">
+                                        <input type="checkbox" id="Nee" name="Nee" value="Nee">
+                                        <span>Nee</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="item_filter measure_filter">
+                            <div class="measure_item">
+                                <h4>Prijs</h4>
+                                <div class="measure_content">
+                                    <p class="size">€</p>
+                                    <input type="number" name="min_prijs" id="min_prijs" min="0" max="1000"
+                                        placeholder="145">
+                                    <p>tot</p>
+                                    <input type="number" name="max_prijs" id="max_prijs" min="0" max="1000"
+                                        placeholder="300">
+                                    <button type="submit" class="bg_green"><img src="./assets/images/arrow-white.png"
+                                            alt="submit"></button>
+                                </div>
+                            </div>
+                            <div class="measure_item">
+                                <h4>Breedte</h4>
+                                <div class="measure_content">
+                                    <p class="size">cm</p>
+                                    <input type="number" name="min_breedte" id="min_breedte" min="0" max="1000"
+                                        placeholder="145">
+                                    <p>tot</p>
+                                    <input type="number" name="max_breedte" id="max_breedte" min="0" max="1000"
+                                        placeholder="300">
+                                    <button type="submit" class="bg_green"><img src="./assets/images/arrow-white.png"
+                                            alt="submit"></button>
+                                </div>
+                            </div>
+                            <div class="measure_item">
+                                <h4>Diepte</h4>
+                                <div class="measure_content">
+                                    <p class="size">cm</p>
+                                    <input type="number" name="min_diepte" id="min_diepte" min="0" max="1000"
+                                        placeholder="145">
+                                    <p>tot</p>
+                                    <input type="number" name="max_diepte" id="max_diepte" min="0" max="1000"
+                                        placeholder="300">
+                                    <button type="submit" class="bg_green"><img src="./assets/images/arrow-white.png"
+                                            alt="submit"></button>
+                                </div>
+                            </div>
+                            <div class="measure_item">
+                                <h4>Hoogte</h4>
+                                <div class="measure_content">
+                                    <p class="size">cm</p>
+                                    <input type="number" name="min_hoogte" id="min_hoogte" min="0" max="1000"
+                                        placeholder="145">
+                                    <p>tot</p>
+                                    <input type="number" name="max_hoogte" id="max_hoogte" min="0" max="1000"
+                                        placeholder="300">
+                                    <button type="submit" class="bg_green"><img src="./assets/images/arrow-white.png"
+                                            alt="submit"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="green_card bg_dark_green font_white">
+                    <div class="bg_image"></div>
+                    <div class="card_content">
+                        <h2>HULP NODIG?</h2>
+                        <p>Wij helpen u graag op weg!</p>
+                        <div class="contact_cards">
+                            <div class="contact_item flex">
+                                <img src="./assets/images/whatsaap.png" alt="whatsaap icon">
+                                <div>
+                                    <h4>WhatsApp</h4>
+                                    <a href="tel:0612345678">0612345678</a>
+                                </div>
+                            </div>
+                            <div class="contact_item flex">
+                                <img src="./assets/images/email.png" alt="email icon">
+                                <div>
+                                    <h4>Chat met ons!</h4>
+                                    <a href="mailto:Info@tuiyn.nl">Info@tuiyn.nl</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter_result_section">
+                <div class="filter_result_header">
+                    <h1>Blokhutten</h1>
+                    <div class="sort_by_container">
+                        <p>Artikelen per pagina</p>
+                        <select name="paging" id="paging" class="arrow_up_down select2">
+                            <option value="12">12</option>
+                            <option value="24">24</option>
+                            <option value="50">50</option>
+                        </select>
+                        <select name="sortby" id="sortby" class="arrow_up_down  select2">
+                            <option value="desc">Prijs oplopend</option>
+                            <option value="asc">asc</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="result_container">
+                    <div class="products_result_header">
+                        <div class="product_container">
+                            <!-- Add header_product -->
+                            <div class="header_product">
+                                <div class="product_footer">
+                                    <p>
+                                        <span class="discount">-33%</span>
+                                        <span class="aanbieding">Aanbieding</span>
+                                    </p>
+                                </div>
+                                <div class="image_container">
+                                    <img src="./assets/images/product.jpg" alt="product a">
+                                </div>
+                            </div>
+                            <!-- add body product -->
+                            <div class="body_product">
+                                <div class="product_review">
+                                    <span>Tuiyn</span>
+                                    <div class="image_star_container flex">
+                                        <img src="./assets/images/star.png" alt="star icon">
+                                        <img src="./assets/images/star.png" alt="star icon">
+                                        <img src="./assets/images/star.png" alt="star icon">
+                                        <img src="./assets/images/star.png" alt="star icon">
+                                        <img src="./assets/images/half-star.svg" alt="star icon">
+                                    </div>
+                                    <span>(384)</span>
+                                </div>
+                                <div class="product_description">
+                                    <h4> Blokhut Chapin </h4>
+                                    <p class="flexible font_grey xss">Flexibele deurplaatsing</p>
+                                    <p class="approved xss">Op voorraad</p>
+                                </div>
+                                <div class="price_container">
+                                    <p class="real_price font_grey ">1399</p>
+                                    <p class="discounted_price">799,-</p>
+                                </div>
+                                <p class="art_number font_grey xss">Art.nummer: 12345678</p>
+                            </div>
+                        </div>
+                        <div class="product_container">
+                            <div class="header_product">
+                                <div class="product_footer">
+                                    <p>
+                                        <span class="discount">-33%</span>
+                                        <span class="aanbieding">Aanbieding</span>
+                                    </p>
+                                </div>
+                                <div class="image_container">
+                                    <img src="./assets/images/product.jpg" alt="product a">
+                                </div>
+                            </div>
+                            <div class="body_product">
+                                <div class="product_review">
+                                    <span>Tuiyn</span>
+                                    <div class="image_star_container flex">
+                                        <img src="./assets/images/star.png" alt="star icon">
+                                        <img src="./assets/images/star.png" alt="star icon">
+                                        <img src="./assets/images/star.png" alt="star icon">
+                                        <img src="./assets/images/star.png" alt="star icon">
+                                        <img src="./assets/images/half-star.svg" alt="star icon">
+                                    </div>
+                                    <span>(384)</span>
+                                </div>
+                                <div class="product_description">
+                                    <h4> Blokhut Chapin </h4>
+                                    <p class="flexible font_grey xss">Flexibele deurplaatsing</p>
+                                    <p class="approved xss">Op voorraad</p>
+                                </div>
+                                <div class="price_container">
+                                    <p class="real_price font_grey ">1399</p>
+                                    <p class="discounted_price">799,-</p>
+                                </div>
+                                <p class="art_number font_grey xss">Art.nummer: 12345678</p>
+                            </div>
+                        </div>
+                        <div class="product_container">
+                            <div class="header_product">
+                                <div class="product_footer">
+                                    <p>
+                                        <span class="discount">-33%</span>
+                                        <span class="aanbieding">Aanbieding</span>
+                                    </p>
+                                </div>
+                                <div class="image_container">
+                                    <img src="./assets/images/product.jpg" alt="product a">
+                                </div>
+                            </div>
+                            <div class="body_product">
+                                <div class="product_review">
+                                    <span>Tuiyn</span>
+                                    <div class="image_star_container flex">
+                                        <img src="./assets/images/star.png" alt="star icon">
+                                        <img src="./assets/images/star.png" alt="star icon">
+                                        <img src="./assets/images/star.png" alt="star icon">
+                                        <img src="./assets/images/star.png" alt="star icon">
+                                        <img src="./assets/images/half-star.svg" alt="star icon">
+                                    </div>
+                                    <span>(384)</span>
+                                </div>
+                                <div class="product_description">
+                                    <h4> Blokhut Chapin </h4>
+                                    <p class="flexible font_grey xss">Flexibele deurplaatsing</p>
+                                    <p class="approved xss">Op voorraad</p>
+                                </div>
+                                <div class="price_container">
+                                    <p class="real_price font_grey ">1399</p>
+                                    <p class="discounted_price">799,-</p>
+                                </div>
+                                <p class="art_number font_grey xss">Art.nummer: 12345678</p>
+                            </div>
+                        </div>
+                        <div class="product_container">
+                            <div class="header_product">
+                                <div class="product_footer">
+                                    <p>
+                                        <span class="discount">-33%</span>
+                                        <span class="aanbieding">Aanbieding</span>
+                                    </p>
+                                </div>
+                                <div class="image_container">
+                                    <img src="./assets/images/product.jpg" alt="product a">
+                                </div>
+                            </div>
+                            <div class="body_product">
+                                <div class="product_review">
+                                    <span>Tuiyn</span>
+                                    <div class="image_star_container flex">
+                                        <img src="./assets/images/star.png" alt="star icon">
+                                        <img src="./assets/images/star.png" alt="star icon">
+                                        <img src="./assets/images/star.png" alt="star icon">
+                                        <img src="./assets/images/star.png" alt="star icon">
+                                        <img src="./assets/images/half-star.svg" alt="star icon">
+                                    </div>
+                                    <span>(384)</span>
+                                </div>
+                                <div class="product_description">
+                                    <h4> Blokhut Chapin </h4>
+                                    <p class="flexible font_grey xss">Flexibele deurplaatsing</p>
+                                    <p class="approved xss">Op voorraad</p>
+                                </div>
+                                <div class="price_container">
+                                    <p class="real_price font_grey ">1399</p>
+                                    <p class="discounted_price">799,-</p>
+                                </div>
+                                <p class="art_number font_grey xss">Art.nummer: 12345678</p>
+                            </div>
+                        </div>
+                        <div class="product_container">
+                            <div class="header_product">
+                                <div class="product_footer">
+                                    <p>
+                                        <span class="discount">-33%</span>
+                                        <span class="aanbieding">Aanbieding</span>
+                                    </p>
+                                </div>
+                                <div class="image_container">
+                                    <img src="./assets/images/product.jpg" alt="product a">
+                                </div>
+                            </div>
+                            <div class="body_product">
+                                <div class="product_review">
+                                    <span>Tuiyn</span>
+                                    <div class="image_star_container flex">
+                                        <img src="./assets/images/star.png" alt="star icon">
+                                        <img src="./assets/images/star.png" alt="star icon">
+                                        <img src="./assets/images/star.png" alt="star icon">
+                                        <img src="./assets/images/star.png" alt="star icon">
+                                        <img src="./assets/images/half-star.svg" alt="star icon">
+                                    </div>
+                                    <span>(384)</span>
+                                </div>
+                                <div class="product_description">
+                                    <h4> Blokhut Chapin </h4>
+                                    <p class="flexible font_grey xss">Flexibele deurplaatsing</p>
+                                    <p class="approved xss">Op voorraad</p>
+                                </div>
+                                <div class="price_container">
+                                    <p class="real_price font_grey ">1399</p>
+                                    <p class="discounted_price">799,-</p>
+                                </div>
+                                <p class="art_number font_grey xss">Art.nummer: 12345678</p>
+                            </div>
+                        </div>
+                        <div class="product_container">
+                            <div class="header_product">
+                                <div class="product_footer">
+                                    <p>
+                                        <span class="discount">-33%</span>
+                                        <span class="aanbieding">Aanbieding</span>
+                                    </p>
+                                </div>
+                                <div class="image_container">
+                                    <img src="./assets/images/product.jpg" alt="product a">
+                                </div>
+                            </div>
+                            <div class="body_product">
+                                <div class="product_review">
+                                    <span>Tuiyn</span>
+                                    <div class="image_star_container flex">
+                                        <img src="./assets/images/star.png" alt="star icon">
+                                        <img src="./assets/images/star.png" alt="star icon">
+                                        <img src="./assets/images/star.png" alt="star icon">
+                                        <img src="./assets/images/star.png" alt="star icon">
+                                        <img src="./assets/images/half-star.svg" alt="star icon">
+                                    </div>
+                                    <span>(384)</span>
+                                </div>
+                                <div class="product_description">
+                                    <h4> Blokhut Chapin Blokhut Blokhut Blokhut</h4>
+                                    <p class="flexible font_grey xss">Flexibele deurplaatsing</p>
+                                    <p class="approved xss">Op voorraad</p>
+                                </div>
+                                <div class="price_container">
+                                    <p class="real_price font_grey ">1399</p>
+                                    <p class="discounted_price">799,-</p>
+                                </div>
+                                <p class="art_number font_grey xss">Art.nummer: 12345678</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="pagination_container">
+                        <div class="the_pagination">
+                            <a class="go_first" href="#">
+                                <img src="./assets/images/prev.svg" alt="go first page">
+                                <img src="./assets/images/prev.svg" alt="go first page">
+                            </a>
+                            <a class="prev" href="#">
+                                <img src="./assets/images/prev.svg" alt="go prec page"></a>
+                            <a href="#" class="number current">1</a>
+                            <a href="#" class="number">2</a>
+                            <a href="#" class="number">3</a>
+                            <a href="#" class="number">4</a>
+                            <a class="next" href="#">
+                                <img src="./assets/images/next.svg" alt="go last page">
+                            </a>
+                            <a class="go_last" href="#">
+                                <img src="./assets/images/next.svg" alt="go last page">
+                                <img src="./assets/images/next.svg" alt="go last page">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="filter_toggle">
+                <img src="/assets/images/filter.svg" alt="" /> Filters </button>
         </div>
-      </div>
-    </div>
-    <div class="menu_footer_section bg_dark_green">
-      <div class="row_container">
-        <div class="menu_item_cards">
-          <div class="menu_item_footer">
-            <img src="./assets/images/white-logo.jpg" alt="logo white" class="logo">
-            <div class="social_media">
-              <a href="#"><img src="./assets/images/ig.svg" alt="ig icon"></a>
-              <a href="#"><img src="./assets/images/fb.svg" alt="fb icon"></a>
-              <a href="#"><img src="./assets/images/linkedin.svg" alt="linkedin icon"></a>
+        <div class="filter_overlay"></div>
+    </main>
+    <footer>
+        <div class="contact_section">
+            <div class="row_container font_white flex space_between">
+                <img src="./assets/images/people-pointing.png" alt="people pointing" height="300px">
+                <div class="contact_cards">
+                    <div class="contact_item">
+                        <img src="./assets/images/call-white.png" alt="call icon">
+                        <h4>Bel ons op 0800-1234</h4>
+                        <p>Bereikbaar van 08:00 - 17:00</p>
+                    </div>
+                    <div class="contact_item">
+                        <img src="./assets/images/chat.png" alt="chat icon">
+                        <h4>Chat met ons!</h4>
+                        <p>Bereikbaar van 08:00 - 17:00</p>
+                    </div>
+                    <div class="contact_item">
+                        <img src="./assets/images/whatsaap.png" alt="whatsaap icon">
+                        <h4>WhatsApp</h4>
+                        <p> Op werkdagen gelijk antwoord! </p>
+                    </div>
+                    <div class="contact_item">
+                        <img src="./assets/images/email.png" alt="email icon">
+                        <h4>Stuur ons een email!</h4>
+                        <p> Op werkdagen gelijk antwoord!</p>
+                    </div>
+                </div>
             </div>
-            <div class="location_items">
-              <div class="location_item">
-                <img src="./assets/images/location.svg" alt="location icon">
-                <a href="#">Straatnaam 123 1234 AB, Amsterdam</a>
-              </div>
-              <div class="location_item">
-                <img src="./assets/images/call-white.png" alt="call us">
-                <a href="tel:+123456789">+123456789</a>
-              </div>
-              <div class="location_item">
-                <img src="./assets/images/email.png" alt="mail us">
-                <a href="mailto:Info@tuiyn.nl">Info@tuiyn.nl</a>
-              </div>
-            </div>
-          </div>
-          <div class="menu_item_footer">
-            <h3>Menu.</h3>
-            <div class="divider"></div>
-            <ul>
-              <li><a href="#">Blokhutten</a></li>
-              <li><a href="#">Sauna’s</a></li>
-              <li><a href="#">Schuttingen</a></li>
-              <li><a href="#">Veranda’s</a></li>
-              <li><a href="#">Tuinkasten</a></li>
-              <li><a href="#">Sale</a></li>
-            </ul>
-          </div>
-          <div class="menu_item_footer">
-            <h3>KLANTENSERVICE.</h3>
-            <div class="divider"></div>
-            <ul>
-              <li><a href="#">Klantenservice</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Garantie</a></li>
-              <li><a href="#">Bezorgen</a></li>
-            </ul>
-          </div>
-          <div class="menu_item_footer">
-            <h3>EXTRA MENU.</h3>
-            <div class="divider"></div>
-            <ul>
-              <li><a href="#">Extra 1</a></li>
-              <li><a href="#">Extra 1</a></li>
-              <li><a href="#">Extra 1</a></li>
-              <li><a href="#">Extra 1</a></li>
-              <li><a href="#">Extra 1</a></li>
-            </ul>
-          </div>
-          <div class="menu_item_footer">
-            <h3>NIEUWSBRIEF.</h3>
-            <div class="divider"></div>
-            <p>Schrijf je in voor onze nieuwsbrief en profiteer gelijk van mooie kortingen en blijf op de hoogte van alle nieuwtjes rondom jouw favoriete tuiynspullen specialist!</p>
-            <form action="#">
-              <input type="email" placeholder="Uw e-mail adres...">
-              <button type="submit">Verstuur!</button>
-            </form>
-          </div>
         </div>
-      </div>
-    </div>
-    <div class="copyright_section bg_dark_green font_white">
-      <div class="row_container ">
-        <div class="copyright_content flex">
-          <p>All rights reserved Tuiyn.nl 2024</p>
-          <ul>
-            <li><a href="#">Algemene voorwaarden</a></li>
-            <li><a href="#"> Privacy Policy</a></li>
-          </ul>
-          <div class="payment_method">
-            <img src="./assets/images/visa.png" alt="visa">
-            <img src="./assets/images/visa.png" alt="visa">
-            <img src="./assets/images/visa.png" alt="visa">
-            <img src="./assets/images/visa.png" alt="visa">
-          </div>
-          <div class="social_media bg_white">
-            <a href="#"><img src="./assets/images/ig.svg" alt="ig icon"></a>
-            <a href="#"><img src="./assets/images/fb.svg" alt="fb icon"></a>
-            <a href="#"><img src="./assets/images/linkedin.svg" alt="linkedin icon"></a>
-          </div>
+        <div class="menu_footer_section bg_dark_green">
+            <div class="row_container">
+                <div class="menu_item_cards">
+                    <div class="menu_item_footer">
+                        <img src="./assets/images/white-logo.jpg" alt="logo white" class="logo">
+                        <div class="social_media">
+                            <a href="#"><img src="./assets/images/ig.svg" alt="ig icon"></a>
+                            <a href="#"><img src="./assets/images/fb.svg" alt="fb icon"></a>
+                            <a href="#"><img src="./assets/images/linkedin.svg" alt="linkedin icon"></a>
+                        </div>
+                        <div class="location_items">
+                            <div class="location_item">
+                                <img src="./assets/images/location.svg" alt="location icon">
+                                <a href="#">Straatnaam 123 1234 AB, Amsterdam</a>
+                            </div>
+                            <div class="location_item">
+                                <img src="./assets/images/call-white.png" alt="call us">
+                                <a href="tel:+123456789">+123456789</a>
+                            </div>
+                            <div class="location_item">
+                                <img src="./assets/images/email.png" alt="mail us">
+                                <a href="mailto:Info@tuiyn.nl">Info@tuiyn.nl</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu_item_footer">
+                        <h3>Menu.</h3>
+                        <div class="divider"></div>
+                        <ul>
+                            <li><a href="#">Blokhutten</a></li>
+                            <li><a href="#">Sauna’s</a></li>
+                            <li><a href="#">Schuttingen</a></li>
+                            <li><a href="#">Veranda’s</a></li>
+                            <li><a href="#">Tuinkasten</a></li>
+                            <li><a href="#">Sale</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu_item_footer">
+                        <h3>KLANTENSERVICE.</h3>
+                        <div class="divider"></div>
+                        <ul>
+                            <li><a href="#">Klantenservice</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Garantie</a></li>
+                            <li><a href="#">Bezorgen</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu_item_footer">
+                        <h3>EXTRA MENU.</h3>
+                        <div class="divider"></div>
+                        <ul>
+                            <li><a href="#">Extra 1</a></li>
+                            <li><a href="#">Extra 1</a></li>
+                            <li><a href="#">Extra 1</a></li>
+                            <li><a href="#">Extra 1</a></li>
+                            <li><a href="#">Extra 1</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu_item_footer">
+                        <h3>NIEUWSBRIEF.</h3>
+                        <div class="divider"></div>
+                        <p>Schrijf je in voor onze nieuwsbrief en profiteer gelijk van mooie kortingen en blijf op de
+                            hoogte van alle nieuwtjes rondom jouw favoriete tuiynspullen specialist!</p>
+                        <form action="#">
+                            <input type="email" placeholder="Uw e-mail adres...">
+                            <button type="submit">Verstuur!</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <section class="pop_up_cart" style="display: none;">
-      <div class="backdrop"></div>
-      <div id="wrap_popup">
-        <div class="content_popup">
-          <div class="popup_header flex space_between">
-            <h2>Winkelwagen</h2>
-            <button class="close-call"><img src="./assets/images/close.svg" alt="close button"></button>
-          </div>
-          <hr>
-          <div class="items_cart_popup">
-            <div class="item_cart">
-              <div class="item_image">
-                <img src="./assets/images/small.jpeg" alt="item_image" width="100px">
-              </div>
-              <div class="item_product">
-                <a href="#"> Keter Cortina 97 kunststof tuinhuis Antraciet </a>
-                <select name="product_quantity" class="select2">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                </select>
-              </div>
-              <div class="item_price">
-                <p>€ 2.149,-</p>
-                <a class="remove_this_item" href="#"><img src="./assets/images/close.svg" alt="close button"> Verwijderen</a>
-              </div>
+        <div class="copyright_section bg_dark_green font_white">
+            <div class="row_container ">
+                <div class="copyright_content flex">
+                    <p>All rights reserved Tuiyn.nl 2024</p>
+                    <ul>
+                        <li><a href="#">Algemene voorwaarden</a></li>
+                        <li><a href="#"> Privacy Policy</a></li>
+                    </ul>
+                    <div class="payment_method">
+                        <img src="./assets/images/visa.png" alt="visa">
+                        <img src="./assets/images/visa.png" alt="visa">
+                        <img src="./assets/images/visa.png" alt="visa">
+                        <img src="./assets/images/visa.png" alt="visa">
+                    </div>
+                    <div class="social_media bg_white">
+                        <a href="#"><img src="./assets/images/ig.svg" alt="ig icon"></a>
+                        <a href="#"><img src="./assets/images/fb.svg" alt="fb icon"></a>
+                        <a href="#"><img src="./assets/images/linkedin.svg" alt="linkedin icon"></a>
+                    </div>
+                </div>
             </div>
-            <div class="item_cart">
-              <div class="item_image">
-                <img src="./assets/images/small.jpeg" alt="item_image" width="100px">
-              </div>
-              <div class="item_product">
-                <a href="#"> Keter Cortina 97 kunststof tuinhuis Antraciet </a>
-                <select name="product_quantity" class="select2">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                </select>
-              </div>
-              <div class="item_price">
-                <p>€ 2.149,-</p>
-                <a class="remove_this_item" href="#"><img src="./assets/images/close.svg" alt="close button"> Verwijderen</a>
-              </div>
-            </div>
-            <div class="item_cart">
-              <div class="item_image">
-                <img src="./assets/images/small.jpeg" alt="item_image" width="100px">
-              </div>
-              <div class="item_product">
-                <a href="#"> Keter Cortina 97 kunststof tuinhuis Antraciet </a>
-                <select name="product_quantity" class="select2">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                </select>
-              </div>
-              <div class="item_price">
-                <p>€ 2.149,-</p>
-                <a class="remove_this_item" href="#"><img src="./assets/images/close.svg" alt="close button"> Verwijderen</a>
-              </div>
-            </div>
-          </div>
-          <div class="popup_footer">
-            <hr>
-            <div class="shipment flex space_between">
-              <p>Verzendkosten</p>
-              <p>GRATIS</p>
-            </div>
-            <div class="total flex space_between">
-              <p>Totaal</p>
-              <p>€ 2.149,-</p>
-            </div>
-            <hr>
-            <a href="#" class="bg_green font_white afrekenen">Afrekenen</a>
-            <a href="#" class="email_pop">Winkelwagen e-mailen</a>
-          </div>
         </div>
-      </div>
-    </section>
-  </footer>
+        <section class="pop_up_cart" style="display: none;">
+            <div class="backdrop"></div>
+            <div id="wrap_popup">
+                <div class="content_popup">
+                    <div class="popup_header flex space_between">
+                        <h2>Winkelwagen</h2>
+                        <button class="close-call"><img src="./assets/images/close.svg" alt="close button"></button>
+                    </div>
+                    <hr>
+                    <div class="items_cart_popup">
+                        <div class="item_cart">
+                            <div class="item_image">
+                                <img src="./assets/images/small.jpeg" alt="item_image" width="100px">
+                            </div>
+                            <div class="item_product">
+                                <a href="#"> Keter Cortina 97 kunststof tuinhuis Antraciet </a>
+                                <select name="product_quantity" class="select2">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </div>
+                            <div class="item_price">
+                                <p>€ 2.149,-</p>
+                                <a class="remove_this_item" href="#"><img src="./assets/images/close.svg"
+                                        alt="close button"> Verwijderen</a>
+                            </div>
+                        </div>
+                        <div class="item_cart">
+                            <div class="item_image">
+                                <img src="./assets/images/small.jpeg" alt="item_image" width="100px">
+                            </div>
+                            <div class="item_product">
+                                <a href="#"> Keter Cortina 97 kunststof tuinhuis Antraciet </a>
+                                <select name="product_quantity" class="select2">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </div>
+                            <div class="item_price">
+                                <p>€ 2.149,-</p>
+                                <a class="remove_this_item" href="#"><img src="./assets/images/close.svg"
+                                        alt="close button"> Verwijderen</a>
+                            </div>
+                        </div>
+                        <div class="item_cart">
+                            <div class="item_image">
+                                <img src="./assets/images/small.jpeg" alt="item_image" width="100px">
+                            </div>
+                            <div class="item_product">
+                                <a href="#"> Keter Cortina 97 kunststof tuinhuis Antraciet </a>
+                                <select name="product_quantity" class="select2">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </div>
+                            <div class="item_price">
+                                <p>€ 2.149,-</p>
+                                <a class="remove_this_item" href="#"><img src="./assets/images/close.svg"
+                                        alt="close button"> Verwijderen</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup_footer">
+                        <hr>
+                        <div class="shipment flex space_between">
+                            <p>Verzendkosten</p>
+                            <p>GRATIS</p>
+                        </div>
+                        <div class="total flex space_between">
+                            <p>Totaal</p>
+                            <p>€ 2.149,-</p>
+                        </div>
+                        <hr>
+                        <a href="#" class="bg_green font_white afrekenen">Afrekenen</a>
+                        <a href="#" class="email_pop">Winkelwagen e-mailen</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
 </body>
 
 </html>
